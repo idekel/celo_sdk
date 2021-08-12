@@ -40,14 +40,25 @@ class Transaction {
   /// have already been sent by [from].
   final int? nonce;
 
-  Transaction(
-      {this.from,
-      this.to,
-      this.maxGas,
-      this.gasPrice,
-      this.value,
-      this.data,
-      this.nonce});
+  /// The address of the currency that will be used to charge the fee
+  final EthereumAddress? feeCurrency;
+
+  final String? gatewayFeeRecipient;
+
+  final String? gatewayFee;
+
+  Transaction({
+    this.from,
+    this.to,
+    this.maxGas,
+    this.gasPrice,
+    this.value,
+    this.data,
+    this.nonce,
+    this.feeCurrency,
+    this.gatewayFeeRecipient,
+    this.gatewayFee,
+  });
 
   /// Constructs a transaction that can be used to call a contract function.
   Transaction.callContract({
@@ -59,17 +70,24 @@ class Transaction {
     this.gasPrice,
     this.value,
     this.nonce,
+    this.feeCurrency,
+    this.gatewayFee,
+    this.gatewayFeeRecipient,
   })  : to = contract.address,
         data = function.encodeCall(parameters);
 
-  Transaction copyWith(
-      {EthereumAddress? from,
-      EthereumAddress? to,
-      int? maxGas,
-      EtherAmount? gasPrice,
-      EtherAmount? value,
-      Uint8List? data,
-      int? nonce}) {
+  Transaction copyWith({
+    EthereumAddress? from,
+    EthereumAddress? to,
+    int? maxGas,
+    EtherAmount? gasPrice,
+    EtherAmount? value,
+    Uint8List? data,
+    int? nonce,
+    EthereumAddress? feeCurrency,
+    String? gatewayFeeRecipient,
+    String? gatewayFee,
+  }) {
     return Transaction(
       from: from ?? this.from,
       to: to ?? this.to,
@@ -78,6 +96,9 @@ class Transaction {
       value: value ?? this.value,
       data: data ?? this.data,
       nonce: nonce ?? this.nonce,
+      feeCurrency: feeCurrency ?? this.feeCurrency,
+      gatewayFeeRecipient: gatewayFeeRecipient ?? this.gatewayFeeRecipient,
+      gatewayFee: gatewayFee ?? this.gatewayFee,
     );
   }
 }

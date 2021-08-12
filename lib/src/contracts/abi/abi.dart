@@ -69,7 +69,11 @@ class ContractAbi {
   ContractAbi(this.name, this.functions, this.events);
 
   factory ContractAbi.fromJson(String jsonData, String name) {
-    final data = json.decode(jsonData);
+    final data = json.decode(jsonData) as List;
+    return ContractAbi.fromData(data, name);
+  }
+
+  factory ContractAbi.fromData(List data, String name) {
     final functions = <ContractFunction>[];
     final events = <ContractEvent>[];
 

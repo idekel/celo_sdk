@@ -88,10 +88,15 @@ Future<Uint8List> _signTransaction(
 }
 
 List<dynamic> _encodeToRlp(Transaction transaction, MsgSignature? signature) {
+  final feeCurrency = transaction.feeCurrency?.addressBytes ?? '';
+
   final list = [
     transaction.nonce,
     transaction.gasPrice?.getInWei,
     transaction.maxGas,
+    feeCurrency,
+    transaction.gatewayFeeRecipient ?? '',
+    transaction.gatewayFee ?? '',
   ];
 
   if (transaction.to != null) {
