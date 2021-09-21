@@ -6,6 +6,7 @@ import 'package:meta/meta.dart';
 import '../crypto/formatting.dart';
 import '../crypto/keccak.dart';
 import '../crypto/secp256k1.dart';
+import '../utils/address.dart';
 
 /// Represents an Ethereum address.
 @immutable
@@ -76,19 +77,7 @@ class EthereumAddress {
   /// uppercase depending on [EIP 55](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md).
   String get hexEip55 {
     // https://eips.ethereum.org/EIPS/eip-55#implementation
-    final hex = hexNo0x.toLowerCase();
-    final hash = bytesToHex(keccakAscii(hexNo0x));
-
-    final eip55 = StringBuffer('0x');
-    for (var i = 0; i < hex.length; i++) {
-      if (int.parse(hash[i], radix: 16) >= 8) {
-        eip55.write(hex[i].toUpperCase());
-      } else {
-        eip55.write(hex[i]);
-      }
-    }
-
-    return eip55.toString();
+    return checksumEthereumAddress(hex);
   }
 
   @override

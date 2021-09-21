@@ -71,3 +71,7 @@ BigInt hexToInt(String hex) {
 int hexToDartInt(String hex) {
   return int.parse(strip0x(hex), radix: 16);
 }
+
+bool isValidFormat(String address) {
+  return RegExp(r'^[0-9a-fA-F]{40}$').hasMatch(strip0x(address));
+}
