@@ -33,7 +33,7 @@ class ERC20Token extends BaseWrapper {
     return ret[0] as BigInt;
   }
 
-  Future transfer(EthereumAddress to, int value) async {
-    return sendTransaction('transfer', [to, BigInt.from(value)]);
+  Future transfer(EthereumAddress to, BigInt value) async {
+    return sendTransaction('transfer', [to, value]);
   }
 }
