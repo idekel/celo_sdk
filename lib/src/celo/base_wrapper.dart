@@ -21,7 +21,7 @@ class BaseWrapper {
 
     final gasPrice = EtherAmount.fromUnitAndValue(
       EtherUnit.wei,
-      (await _kit.getGasPrice()).toInt(),
+      (await _kit.getGasPrice()) * BigInt.from(3),
     );
     return _kit.web3client.sendTransaction(
       _kit.credentials,
