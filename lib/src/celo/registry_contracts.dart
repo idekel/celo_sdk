@@ -7,10 +7,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -28,17 +25,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'name': '', 'type': 'bytes32'}
         ],
         'name': 'registry',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -49,10 +40,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -63,10 +51,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -75,10 +60,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -89,21 +71,9 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': false,
-            'name': 'identifier',
-            'type': 'string'
-          },
-          {
-            'indexed': true,
-            'name': 'identifierHash',
-            'type': 'bytes32'
-          },
-          {
-            'indexed': true,
-            'name': 'addr',
-            'type': 'address'
-          }
+          {'indexed': false, 'name': 'identifier', 'type': 'string'},
+          {'indexed': true, 'name': 'identifierHash', 'type': 'bytes32'},
+          {'indexed': true, 'name': 'addr', 'type': 'address'}
         ],
         'name': 'RegistryUpdated',
         'type': 'event'
@@ -111,16 +81,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'previousOwner',
-            'type': 'address'
-          },
-          {
-            'indexed': true,
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'indexed': true, 'name': 'previousOwner', 'type': 'address'},
+          {'indexed': true, 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'OwnershipTransferred',
         'type': 'event'
@@ -137,14 +99,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'identifier',
-            'type': 'string'
-          },
-          {
-            'name': 'addr',
-            'type': 'address'
-          }
+          {'name': 'identifier', 'type': 'string'},
+          {'name': 'addr', 'type': 'address'}
         ],
         'name': 'setAddressFor',
         'outputs': [],
@@ -155,17 +111,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'identifierHash',
-            'type': 'bytes32'
-          }
+          {'name': 'identifierHash', 'type': 'bytes32'}
         ],
         'name': 'getAddressForOrDie',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -174,17 +124,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'identifierHash',
-            'type': 'bytes32'
-          }
+          {'name': 'identifierHash', 'type': 'bytes32'}
         ],
         'name': 'getAddressFor',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -193,17 +137,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'identifier',
-            'type': 'string'
-          }
+          {'name': 'identifier', 'type': 'string'}
         ],
         'name': 'getAddressForStringOrDie',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -212,17 +150,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'identifier',
-            'type': 'string'
-          }
+          {'name': 'identifier', 'type': 'string'}
         ],
         'name': 'getAddressForString',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -231,21 +163,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'identifierHashes',
-            'type': 'bytes32[]'
-          },
-          {
-            'name': 'sender',
-            'type': 'address'
-          }
+          {'name': 'identifierHashes', 'type': 'bytes32[]'},
+          {'name': 'sender', 'type': 'address'}
         ],
         'name': 'isOneOf',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -261,10 +184,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -284,10 +204,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'registry',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -298,10 +215,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -312,10 +226,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -324,10 +235,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'registryAddress',
-            'type': 'address'
-          }
+          {'name': 'registryAddress', 'type': 'address'}
         ],
         'name': 'setRegistry',
         'outputs': [],
@@ -338,17 +246,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'name': 'authorizedBy',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -357,10 +259,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -371,16 +270,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'indexed': false,
-            'name': 'signer',
-            'type': 'address'
-          }
+          {'indexed': true, 'name': 'account', 'type': 'address'},
+          {'indexed': false, 'name': 'signer', 'type': 'address'}
         ],
         'name': 'AttestationSignerAuthorized',
         'type': 'event'
@@ -388,16 +279,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'indexed': false,
-            'name': 'signer',
-            'type': 'address'
-          }
+          {'indexed': true, 'name': 'account', 'type': 'address'},
+          {'indexed': false, 'name': 'signer', 'type': 'address'}
         ],
         'name': 'VoteSignerAuthorized',
         'type': 'event'
@@ -405,16 +288,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'indexed': false,
-            'name': 'signer',
-            'type': 'address'
-          }
+          {'indexed': true, 'name': 'account', 'type': 'address'},
+          {'indexed': false, 'name': 'signer', 'type': 'address'}
         ],
         'name': 'ValidatorSignerAuthorized',
         'type': 'event'
@@ -422,16 +297,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'indexed': false,
-            'name': 'oldSigner',
-            'type': 'address'
-          }
+          {'indexed': true, 'name': 'account', 'type': 'address'},
+          {'indexed': false, 'name': 'oldSigner', 'type': 'address'}
         ],
         'name': 'AttestationSignerRemoved',
         'type': 'event'
@@ -439,16 +306,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'indexed': false,
-            'name': 'oldSigner',
-            'type': 'address'
-          }
+          {'indexed': true, 'name': 'account', 'type': 'address'},
+          {'indexed': false, 'name': 'oldSigner', 'type': 'address'}
         ],
         'name': 'VoteSignerRemoved',
         'type': 'event'
@@ -456,16 +315,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'indexed': false,
-            'name': 'oldSigner',
-            'type': 'address'
-          }
+          {'indexed': true, 'name': 'account', 'type': 'address'},
+          {'indexed': false, 'name': 'oldSigner', 'type': 'address'}
         ],
         'name': 'ValidatorSignerRemoved',
         'type': 'event'
@@ -473,16 +324,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'indexed': false,
-            'name': 'dataEncryptionKey',
-            'type': 'bytes'
-          }
+          {'indexed': true, 'name': 'account', 'type': 'address'},
+          {'indexed': false, 'name': 'dataEncryptionKey', 'type': 'bytes'}
         ],
         'name': 'AccountDataEncryptionKeySet',
         'type': 'event'
@@ -490,16 +333,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'indexed': false,
-            'name': 'name',
-            'type': 'string'
-          }
+          {'indexed': true, 'name': 'account', 'type': 'address'},
+          {'indexed': false, 'name': 'name', 'type': 'string'}
         ],
         'name': 'AccountNameSet',
         'type': 'event'
@@ -507,16 +342,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'indexed': false,
-            'name': 'metadataURL',
-            'type': 'string'
-          }
+          {'indexed': true, 'name': 'account', 'type': 'address'},
+          {'indexed': false, 'name': 'metadataURL', 'type': 'string'}
         ],
         'name': 'AccountMetadataURLSet',
         'type': 'event'
@@ -524,16 +351,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'indexed': false,
-            'name': 'walletAddress',
-            'type': 'address'
-          }
+          {'indexed': true, 'name': 'account', 'type': 'address'},
+          {'indexed': false, 'name': 'walletAddress', 'type': 'address'}
         ],
         'name': 'AccountWalletAddressSet',
         'type': 'event'
@@ -541,11 +360,7 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'account',
-            'type': 'address'
-          }
+          {'indexed': true, 'name': 'account', 'type': 'address'}
         ],
         'name': 'AccountCreated',
         'type': 'event'
@@ -553,11 +368,7 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'registryAddress',
-            'type': 'address'
-          }
+          {'indexed': true, 'name': 'registryAddress', 'type': 'address'}
         ],
         'name': 'RegistrySet',
         'type': 'event'
@@ -565,16 +376,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'previousOwner',
-            'type': 'address'
-          },
-          {
-            'indexed': true,
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'indexed': true, 'name': 'previousOwner', 'type': 'address'},
+          {'indexed': true, 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'OwnershipTransferred',
         'type': 'event'
@@ -582,10 +385,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'registryAddress',
-            'type': 'address'
-          }
+          {'name': 'registryAddress', 'type': 'address'}
         ],
         'name': 'initialize',
         'outputs': [],
@@ -596,30 +396,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'name',
-            'type': 'string'
-          },
-          {
-            'name': 'dataEncryptionKey',
-            'type': 'bytes'
-          },
-          {
-            'name': 'walletAddress',
-            'type': 'address'
-          },
-          {
-            'name': 'v',
-            'type': 'uint8'
-          },
-          {
-            'name': 'r',
-            'type': 'bytes32'
-          },
-          {
-            'name': 's',
-            'type': 'bytes32'
-          }
+          {'name': 'name', 'type': 'string'},
+          {'name': 'dataEncryptionKey', 'type': 'bytes'},
+          {'name': 'walletAddress', 'type': 'address'},
+          {'name': 'v', 'type': 'uint8'},
+          {'name': 'r', 'type': 'bytes32'},
+          {'name': 's', 'type': 'bytes32'}
         ],
         'name': 'setAccount',
         'outputs': [],
@@ -632,10 +414,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'createAccount',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -644,10 +423,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'name',
-            'type': 'string'
-          }
+          {'name': 'name', 'type': 'string'}
         ],
         'name': 'setName',
         'outputs': [],
@@ -658,22 +434,10 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'walletAddress',
-            'type': 'address'
-          },
-          {
-            'name': 'v',
-            'type': 'uint8'
-          },
-          {
-            'name': 'r',
-            'type': 'bytes32'
-          },
-          {
-            'name': 's',
-            'type': 'bytes32'
-          }
+          {'name': 'walletAddress', 'type': 'address'},
+          {'name': 'v', 'type': 'uint8'},
+          {'name': 'r', 'type': 'bytes32'},
+          {'name': 's', 'type': 'bytes32'}
         ],
         'name': 'setWalletAddress',
         'outputs': [],
@@ -684,10 +448,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'dataEncryptionKey',
-            'type': 'bytes'
-          }
+          {'name': 'dataEncryptionKey', 'type': 'bytes'}
         ],
         'name': 'setAccountDataEncryptionKey',
         'outputs': [],
@@ -698,10 +459,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'metadataURL',
-            'type': 'string'
-          }
+          {'name': 'metadataURL', 'type': 'string'}
         ],
         'name': 'setMetadataURL',
         'outputs': [],
@@ -712,22 +470,10 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'signer',
-            'type': 'address'
-          },
-          {
-            'name': 'v',
-            'type': 'uint8'
-          },
-          {
-            'name': 'r',
-            'type': 'bytes32'
-          },
-          {
-            'name': 's',
-            'type': 'bytes32'
-          }
+          {'name': 'signer', 'type': 'address'},
+          {'name': 'v', 'type': 'uint8'},
+          {'name': 'r', 'type': 'bytes32'},
+          {'name': 's', 'type': 'bytes32'}
         ],
         'name': 'authorizeVoteSigner',
         'outputs': [],
@@ -738,16 +484,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'signer',
-            'type': 'address'
-          }
+          {'name': 'signer', 'type': 'address'}
         ],
         'name': 'getAbiEnc',
-        'outputs': [{
-          'name': '',
-          'type': 'bytes'
-        }],
+        'outputs': [
+          {'name': '', 'type': 'bytes'}
+        ],
         'payable': false,
         'stateMutability': 'nonpayable',
         'type': 'function'
@@ -755,22 +497,10 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'signer',
-            'type': 'address'
-          },
-          {
-            'name': 'v',
-            'type': 'uint8'
-          },
-          {
-            'name': 'r',
-            'type': 'bytes32'
-          },
-          {
-            'name': 's',
-            'type': 'bytes32'
-          }
+          {'name': 'signer', 'type': 'address'},
+          {'name': 'v', 'type': 'uint8'},
+          {'name': 'r', 'type': 'bytes32'},
+          {'name': 's', 'type': 'bytes32'}
         ],
         'name': 'authorizeValidatorSigner',
         'outputs': [],
@@ -781,26 +511,11 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'signer',
-            'type': 'address'
-          },
-          {
-            'name': 'v',
-            'type': 'uint8'
-          },
-          {
-            'name': 'r',
-            'type': 'bytes32'
-          },
-          {
-            'name': 's',
-            'type': 'bytes32'
-          },
-          {
-            'name': 'ecdsaPublicKey',
-            'type': 'bytes'
-          }
+          {'name': 'signer', 'type': 'address'},
+          {'name': 'v', 'type': 'uint8'},
+          {'name': 'r', 'type': 'bytes32'},
+          {'name': 's', 'type': 'bytes32'},
+          {'name': 'ecdsaPublicKey', 'type': 'bytes'}
         ],
         'name': 'authorizeValidatorSignerWithPublicKey',
         'outputs': [],
@@ -811,34 +526,13 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'signer',
-            'type': 'address'
-          },
-          {
-            'name': 'v',
-            'type': 'uint8'
-          },
-          {
-            'name': 'r',
-            'type': 'bytes32'
-          },
-          {
-            'name': 's',
-            'type': 'bytes32'
-          },
-          {
-            'name': 'ecdsaPublicKey',
-            'type': 'bytes'
-          },
-          {
-            'name': 'blsPublicKey',
-            'type': 'bytes'
-          },
-          {
-            'name': 'blsPop',
-            'type': 'bytes'
-          }
+          {'name': 'signer', 'type': 'address'},
+          {'name': 'v', 'type': 'uint8'},
+          {'name': 'r', 'type': 'bytes32'},
+          {'name': 's', 'type': 'bytes32'},
+          {'name': 'ecdsaPublicKey', 'type': 'bytes'},
+          {'name': 'blsPublicKey', 'type': 'bytes'},
+          {'name': 'blsPop', 'type': 'bytes'}
         ],
         'name': 'authorizeValidatorSignerWithKeys',
         'outputs': [],
@@ -849,22 +543,10 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'signer',
-            'type': 'address'
-          },
-          {
-            'name': 'v',
-            'type': 'uint8'
-          },
-          {
-            'name': 'r',
-            'type': 'bytes32'
-          },
-          {
-            'name': 's',
-            'type': 'bytes32'
-          }
+          {'name': 'signer', 'type': 'address'},
+          {'name': 'v', 'type': 'uint8'},
+          {'name': 'r', 'type': 'bytes32'},
+          {'name': 's', 'type': 'bytes32'}
         ],
         'name': 'authorizeAttestationSigner',
         'outputs': [],
@@ -902,17 +584,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'signer',
-            'type': 'address'
-          }
+          {'name': 'signer', 'type': 'address'}
         ],
         'name': 'attestationSignerToAccount',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -921,17 +597,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'signer',
-            'type': 'address'
-          }
+          {'name': 'signer', 'type': 'address'}
         ],
         'name': 'validatorSignerToAccount',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -940,17 +610,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'signer',
-            'type': 'address'
-          }
+          {'name': 'signer', 'type': 'address'}
         ],
         'name': 'voteSignerToAccount',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -959,17 +623,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'signer',
-            'type': 'address'
-          }
+          {'name': 'signer', 'type': 'address'}
         ],
         'name': 'signerToAccount',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -978,17 +636,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'account',
-            'type': 'address'
-          }
+          {'name': 'account', 'type': 'address'}
         ],
         'name': 'getVoteSigner',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -997,17 +649,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'account',
-            'type': 'address'
-          }
+          {'name': 'account', 'type': 'address'}
         ],
         'name': 'getValidatorSigner',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1016,17 +662,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'account',
-            'type': 'address'
-          }
+          {'name': 'account', 'type': 'address'}
         ],
         'name': 'getAttestationSigner',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1035,17 +675,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'account',
-            'type': 'address'
-          }
+          {'name': 'account', 'type': 'address'}
         ],
         'name': 'hasAuthorizedVoteSigner',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1054,17 +688,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'account',
-            'type': 'address'
-          }
+          {'name': 'account', 'type': 'address'}
         ],
         'name': 'hasAuthorizedValidatorSigner',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1073,17 +701,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'account',
-            'type': 'address'
-          }
+          {'name': 'account', 'type': 'address'}
         ],
         'name': 'hasAuthorizedAttestationSigner',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1092,17 +714,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'account',
-            'type': 'address'
-          }
+          {'name': 'account', 'type': 'address'}
         ],
         'name': 'getName',
         'outputs': [
-          {
-            'name': '',
-            'type': 'string'
-          }
+          {'name': '', 'type': 'string'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1111,17 +727,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'account',
-            'type': 'address'
-          }
+          {'name': 'account', 'type': 'address'}
         ],
         'name': 'getMetadataURL',
         'outputs': [
-          {
-            'name': '',
-            'type': 'string'
-          }
+          {'name': '', 'type': 'string'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1130,21 +740,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'accountsToQuery',
-            'type': 'address[]'
-          }
+          {'name': 'accountsToQuery', 'type': 'address[]'}
         ],
         'name': 'batchGetMetadataURL',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256[]'
-          },
-          {
-            'name': '',
-            'type': 'bytes'
-          }
+          {'name': '', 'type': 'uint256[]'},
+          {'name': '', 'type': 'bytes'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1153,17 +754,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'account',
-            'type': 'address'
-          }
+          {'name': 'account', 'type': 'address'}
         ],
         'name': 'getDataEncryptionKey',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bytes'
-          }
+          {'name': '', 'type': 'bytes'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1172,17 +767,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'account',
-            'type': 'address'
-          }
+          {'name': 'account', 'type': 'address'}
         ],
         'name': 'getWalletAddress',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1191,17 +780,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'account',
-            'type': 'address'
-          }
+          {'name': 'account', 'type': 'address'}
         ],
         'name': 'isAccount',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1210,17 +793,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'signer',
-            'type': 'address'
-          }
+          {'name': 'signer', 'type': 'address'}
         ],
         'name': 'isAuthorizedSigner',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1234,17 +811,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'name': 'index', 'type': 'uint256'}
         ],
         'name': 'validatorSignerAddressFromCurrentSet',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1255,10 +826,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1267,25 +835,13 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'sender',
-            'type': 'address'
-          },
-          {
-            'name': 'blsKey',
-            'type': 'bytes'
-          },
-          {
-            'name': 'blsPop',
-            'type': 'bytes'
-          }
+          {'name': 'sender', 'type': 'address'},
+          {'name': 'blsKey', 'type': 'bytes'},
+          {'name': 'blsPop', 'type': 'bytes'}
         ],
         'name': 'checkProofOfPossession',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1294,17 +850,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'getEpochNumberOfBlock',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1313,17 +863,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'name': 'header', 'type': 'bytes'}
         ],
         'name': 'getVerifiedSealBitmapFromHeader',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1332,21 +876,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'index',
-            'type': 'uint256'
-          },
-          {
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'name': 'index', 'type': 'uint256'},
+          {'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'validatorSignerAddressFromSet',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1355,17 +890,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'name': 'header', 'type': 'bytes'}
         ],
         'name': 'hashHeader',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1385,10 +914,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'minQuorumSizeInCurrentSet',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1399,10 +925,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'registry',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1413,10 +936,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'maxAttestations',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1427,10 +947,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'numberValidatorsInCurrentSet',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1441,10 +958,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'selectIssuersWaitBlocks',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1453,17 +967,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'name': 'header', 'type': 'bytes'}
         ],
         'name': 'getBlockNumberFromHeader',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1474,10 +982,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1488,10 +993,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1502,10 +1004,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getEpochNumber',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1514,17 +1013,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'numberValidatorsInSet',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1533,10 +1026,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'registryAddress',
-            'type': 'address'
-          }
+          {'name': 'registryAddress', 'type': 'address'}
         ],
         'name': 'setRegistry',
         'outputs': [],
@@ -1549,10 +1039,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'attestationExpiryBlocks',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1561,17 +1048,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'name': 'attestationRequestFees',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1582,10 +1063,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getEpochSize',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1594,17 +1072,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'minQuorumSize',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1613,21 +1085,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': '',
-            'type': 'address'
-          },
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'},
+          {'name': '', 'type': 'address'}
         ],
         'name': 'pendingWithdrawals',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1636,41 +1099,17 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'aNumerator',
-            'type': 'uint256'
-          },
-          {
-            'name': 'aDenominator',
-            'type': 'uint256'
-          },
-          {
-            'name': 'bNumerator',
-            'type': 'uint256'
-          },
-          {
-            'name': 'bDenominator',
-            'type': 'uint256'
-          },
-          {
-            'name': 'exponent',
-            'type': 'uint256'
-          },
-          {
-            'name': '_decimals',
-            'type': 'uint256'
-          }
+          {'name': 'aNumerator', 'type': 'uint256'},
+          {'name': 'aDenominator', 'type': 'uint256'},
+          {'name': 'bNumerator', 'type': 'uint256'},
+          {'name': 'bDenominator', 'type': 'uint256'},
+          {'name': 'exponent', 'type': 'uint256'},
+          {'name': '_decimals', 'type': 'uint256'}
         ],
         'name': 'fractionMulExp',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'},
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1679,10 +1118,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -1693,17 +1129,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'getParentSealBitmap',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -1712,16 +1142,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'identifier',
-            'type': 'bytes32'
-          },
-          {
-            'indexed': true,
-            'name': 'account',
-            'type': 'address'
-          },
+          {'indexed': true, 'name': 'identifier', 'type': 'bytes32'},
+          {'indexed': true, 'name': 'account', 'type': 'address'},
           {
             'indexed': false,
             'name': 'attestationsRequested',
@@ -1739,21 +1161,9 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'identifier',
-            'type': 'bytes32'
-          },
-          {
-            'indexed': true,
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'indexed': true,
-            'name': 'issuer',
-            'type': 'address'
-          },
+          {'indexed': true, 'name': 'identifier', 'type': 'bytes32'},
+          {'indexed': true, 'name': 'account', 'type': 'address'},
+          {'indexed': true, 'name': 'issuer', 'type': 'address'},
           {
             'indexed': false,
             'name': 'attestationRequestFeeToken',
@@ -1766,21 +1176,9 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'identifier',
-            'type': 'bytes32'
-          },
-          {
-            'indexed': true,
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'indexed': true,
-            'name': 'issuer',
-            'type': 'address'
-          }
+          {'indexed': true, 'name': 'identifier', 'type': 'bytes32'},
+          {'indexed': true, 'name': 'account', 'type': 'address'},
+          {'indexed': true, 'name': 'issuer', 'type': 'address'}
         ],
         'name': 'AttestationCompleted',
         'type': 'event'
@@ -1788,21 +1186,9 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'indexed': true,
-            'name': 'token',
-            'type': 'address'
-          },
-          {
-            'indexed': false,
-            'name': 'amount',
-            'type': 'uint256'
-          }
+          {'indexed': true, 'name': 'account', 'type': 'address'},
+          {'indexed': true, 'name': 'token', 'type': 'address'},
+          {'indexed': false, 'name': 'amount', 'type': 'uint256'}
         ],
         'name': 'Withdrawal',
         'type': 'event'
@@ -1810,11 +1196,7 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': false,
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'indexed': false, 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'AttestationExpiryBlocksSet',
         'type': 'event'
@@ -1822,16 +1204,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'token',
-            'type': 'address'
-          },
-          {
-            'indexed': false,
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'indexed': true, 'name': 'token', 'type': 'address'},
+          {'indexed': false, 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'AttestationRequestFeeSet',
         'type': 'event'
@@ -1839,11 +1213,7 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': false,
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'indexed': false, 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'SelectIssuersWaitBlocksSet',
         'type': 'event'
@@ -1851,11 +1221,7 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': false,
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'indexed': false, 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'MaxAttestationsSet',
         'type': 'event'
@@ -1863,11 +1229,7 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'registryAddress',
-            'type': 'address'
-          }
+          {'indexed': true, 'name': 'registryAddress', 'type': 'address'}
         ],
         'name': 'RegistrySet',
         'type': 'event'
@@ -1875,16 +1237,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'previousOwner',
-            'type': 'address'
-          },
-          {
-            'indexed': true,
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'indexed': true, 'name': 'previousOwner', 'type': 'address'},
+          {'indexed': true, 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'OwnershipTransferred',
         'type': 'event'
@@ -1892,30 +1246,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'registryAddress',
-            'type': 'address'
-          },
-          {
-            'name': '_attestationExpiryBlocks',
-            'type': 'uint256'
-          },
-          {
-            'name': '_selectIssuersWaitBlocks',
-            'type': 'uint256'
-          },
-          {
-            'name': '_maxAttestations',
-            'type': 'uint256'
-          },
-          {
-            'name': 'attestationRequestFeeTokens',
-            'type': 'address[]'
-          },
-          {
-            'name': 'attestationRequestFeeValues',
-            'type': 'uint256[]'
-          }
+          {'name': 'registryAddress', 'type': 'address'},
+          {'name': '_attestationExpiryBlocks', 'type': 'uint256'},
+          {'name': '_selectIssuersWaitBlocks', 'type': 'uint256'},
+          {'name': '_maxAttestations', 'type': 'uint256'},
+          {'name': 'attestationRequestFeeTokens', 'type': 'address[]'},
+          {'name': 'attestationRequestFeeValues', 'type': 'uint256[]'}
         ],
         'name': 'initialize',
         'outputs': [],
@@ -1926,18 +1262,9 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'identifier',
-            'type': 'bytes32'
-          },
-          {
-            'name': 'attestationsRequested',
-            'type': 'uint256'
-          },
-          {
-            'name': 'attestationRequestFeeToken',
-            'type': 'address'
-          }
+          {'name': 'identifier', 'type': 'bytes32'},
+          {'name': 'attestationsRequested', 'type': 'uint256'},
+          {'name': 'attestationRequestFeeToken', 'type': 'address'}
         ],
         'name': 'request',
         'outputs': [],
@@ -1948,10 +1275,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'identifier',
-            'type': 'bytes32'
-          }
+          {'name': 'identifier', 'type': 'bytes32'}
         ],
         'name': 'selectIssuers',
         'outputs': [],
@@ -1962,22 +1286,10 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'identifier',
-            'type': 'bytes32'
-          },
-          {
-            'name': 'v',
-            'type': 'uint8'
-          },
-          {
-            'name': 'r',
-            'type': 'bytes32'
-          },
-          {
-            'name': 's',
-            'type': 'bytes32'
-          }
+          {'name': 'identifier', 'type': 'bytes32'},
+          {'name': 'v', 'type': 'uint8'},
+          {'name': 'r', 'type': 'bytes32'},
+          {'name': 's', 'type': 'bytes32'}
         ],
         'name': 'complete',
         'outputs': [],
@@ -1988,14 +1300,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'identifier',
-            'type': 'bytes32'
-          },
-          {
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'name': 'identifier', 'type': 'bytes32'},
+          {'name': 'index', 'type': 'uint256'}
         ],
         'name': 'revoke',
         'outputs': [],
@@ -2006,10 +1312,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'token',
-            'type': 'address'
-          }
+          {'name': 'token', 'type': 'address'}
         ],
         'name': 'withdraw',
         'outputs': [],
@@ -2020,29 +1323,14 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'identifier',
-            'type': 'bytes32'
-          },
-          {
-            'name': 'account',
-            'type': 'address'
-          }
+          {'name': 'identifier', 'type': 'bytes32'},
+          {'name': 'account', 'type': 'address'}
         ],
         'name': 'getUnselectedRequest',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint32'
-          },
-          {
-            'name': '',
-            'type': 'uint32'
-          },
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'uint32'},
+          {'name': '', 'type': 'uint32'},
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2051,21 +1339,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'identifier',
-            'type': 'bytes32'
-          },
-          {
-            'name': 'account',
-            'type': 'address'
-          }
+          {'name': 'identifier', 'type': 'bytes32'},
+          {'name': 'account', 'type': 'address'}
         ],
         'name': 'getAttestationIssuers',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address[]'
-          }
+          {'name': '', 'type': 'address[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2074,25 +1353,13 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'identifier',
-            'type': 'bytes32'
-          },
-          {
-            'name': 'account',
-            'type': 'address'
-          }
+          {'name': 'identifier', 'type': 'bytes32'},
+          {'name': 'account', 'type': 'address'}
         ],
         'name': 'getAttestationStats',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint32'
-          },
-          {
-            'name': '',
-            'type': 'uint32'
-          }
+          {'name': '', 'type': 'uint32'},
+          {'name': '', 'type': 'uint32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2101,29 +1368,14 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'identifiersToLookup',
-            'type': 'bytes32[]'
-          }
+          {'name': 'identifiersToLookup', 'type': 'bytes32[]'}
         ],
         'name': 'batchGetAttestationStats',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256[]'
-          },
-          {
-            'name': '',
-            'type': 'address[]'
-          },
-          {
-            'name': '',
-            'type': 'uint64[]'
-          },
-          {
-            'name': '',
-            'type': 'uint64[]'
-          }
+          {'name': '', 'type': 'uint256[]'},
+          {'name': '', 'type': 'address[]'},
+          {'name': '', 'type': 'uint64[]'},
+          {'name': '', 'type': 'uint64[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2132,33 +1384,15 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'identifier',
-            'type': 'bytes32'
-          },
-          {
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'name': 'issuer',
-            'type': 'address'
-          }
+          {'name': 'identifier', 'type': 'bytes32'},
+          {'name': 'account', 'type': 'address'},
+          {'name': 'issuer', 'type': 'address'}
         ],
         'name': 'getAttestationState',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint8'
-          },
-          {
-            'name': '',
-            'type': 'uint32'
-          },
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'uint8'},
+          {'name': '', 'type': 'uint32'},
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2167,33 +1401,15 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'identifier',
-            'type': 'bytes32'
-          },
-          {
-            'name': 'account',
-            'type': 'address'
-          }
+          {'name': 'identifier', 'type': 'bytes32'},
+          {'name': 'account', 'type': 'address'}
         ],
         'name': 'getCompletableAttestations',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint32[]'
-          },
-          {
-            'name': '',
-            'type': 'address[]'
-          },
-          {
-            'name': '',
-            'type': 'uint256[]'
-          },
-          {
-            'name': '',
-            'type': 'bytes'
-          }
+          {'name': '', 'type': 'uint32[]'},
+          {'name': '', 'type': 'address[]'},
+          {'name': '', 'type': 'uint256[]'},
+          {'name': '', 'type': 'bytes'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2202,17 +1418,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'token',
-            'type': 'address'
-          }
+          {'name': 'token', 'type': 'address'}
         ],
         'name': 'getAttestationRequestFee',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2221,14 +1431,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'token',
-            'type': 'address'
-          },
-          {
-            'name': 'fee',
-            'type': 'uint256'
-          }
+          {'name': 'token', 'type': 'address'},
+          {'name': 'fee', 'type': 'uint256'}
         ],
         'name': 'setAttestationRequestFee',
         'outputs': [],
@@ -2239,10 +1443,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': '_attestationExpiryBlocks',
-            'type': 'uint256'
-          }
+          {'name': '_attestationExpiryBlocks', 'type': 'uint256'}
         ],
         'name': 'setAttestationExpiryBlocks',
         'outputs': [],
@@ -2253,10 +1454,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': '_selectIssuersWaitBlocks',
-            'type': 'uint256'
-          }
+          {'name': '_selectIssuersWaitBlocks', 'type': 'uint256'}
         ],
         'name': 'setSelectIssuersWaitBlocks',
         'outputs': [],
@@ -2267,10 +1465,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': '_maxAttestations',
-            'type': 'uint256'
-          }
+          {'name': '_maxAttestations', 'type': 'uint256'}
         ],
         'name': 'setMaxAttestations',
         'outputs': [],
@@ -2283,10 +1478,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getMaxAttestations',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2295,33 +1487,15 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'identifier',
-            'type': 'bytes32'
-          },
-          {
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'name': 'v',
-            'type': 'uint8'
-          },
-          {
-            'name': 'r',
-            'type': 'bytes32'
-          },
-          {
-            'name': 's',
-            'type': 'bytes32'
-          }
+          {'name': 'identifier', 'type': 'bytes32'},
+          {'name': 'account', 'type': 'address'},
+          {'name': 'v', 'type': 'uint8'},
+          {'name': 'r', 'type': 'bytes32'},
+          {'name': 's', 'type': 'bytes32'}
         ],
         'name': 'validateAttestationCode',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2330,17 +1504,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'identifier',
-            'type': 'bytes32'
-          }
+          {'name': 'identifier', 'type': 'bytes32'}
         ],
         'name': 'lookupAccountsForIdentifier',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address[]'
-          }
+          {'name': '', 'type': 'address[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2356,10 +1524,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2379,10 +1544,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'blockGasLimit',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2393,10 +1555,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'intrinsicGasForAlternativeFeeCurrency',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2407,10 +1566,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2421,10 +1577,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2433,10 +1586,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -2447,21 +1597,9 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': false,
-            'name': 'major',
-            'type': 'uint256'
-          },
-          {
-            'indexed': false,
-            'name': 'minor',
-            'type': 'uint256'
-          },
-          {
-            'indexed': false,
-            'name': 'patch',
-            'type': 'uint256'
-          }
+          {'indexed': false, 'name': 'major', 'type': 'uint256'},
+          {'indexed': false, 'name': 'minor', 'type': 'uint256'},
+          {'indexed': false, 'name': 'patch', 'type': 'uint256'}
         ],
         'name': 'MinimumClientVersionSet',
         'type': 'event'
@@ -2469,11 +1607,7 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': false,
-            'name': 'gas',
-            'type': 'uint256'
-          }
+          {'indexed': false, 'name': 'gas', 'type': 'uint256'}
         ],
         'name': 'IntrinsicGasForAlternativeFeeCurrencySet',
         'type': 'event'
@@ -2481,11 +1615,7 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': false,
-            'name': 'limit',
-            'type': 'uint256'
-          }
+          {'indexed': false, 'name': 'limit', 'type': 'uint256'}
         ],
         'name': 'BlockGasLimitSet',
         'type': 'event'
@@ -2493,16 +1623,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'previousOwner',
-            'type': 'address'
-          },
-          {
-            'indexed': true,
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'indexed': true, 'name': 'previousOwner', 'type': 'address'},
+          {'indexed': true, 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'OwnershipTransferred',
         'type': 'event'
@@ -2510,26 +1632,11 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'major',
-            'type': 'uint256'
-          },
-          {
-            'name': 'minor',
-            'type': 'uint256'
-          },
-          {
-            'name': 'patch',
-            'type': 'uint256'
-          },
-          {
-            'name': '_gasForNonGoldCurrencies',
-            'type': 'uint256'
-          },
-          {
-            'name': 'gasLimit',
-            'type': 'uint256'
-          }
+          {'name': 'major', 'type': 'uint256'},
+          {'name': 'minor', 'type': 'uint256'},
+          {'name': 'patch', 'type': 'uint256'},
+          {'name': '_gasForNonGoldCurrencies', 'type': 'uint256'},
+          {'name': 'gasLimit', 'type': 'uint256'}
         ],
         'name': 'initialize',
         'outputs': [],
@@ -2540,18 +1647,9 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'major',
-            'type': 'uint256'
-          },
-          {
-            'name': 'minor',
-            'type': 'uint256'
-          },
-          {
-            'name': 'patch',
-            'type': 'uint256'
-          }
+          {'name': 'major', 'type': 'uint256'},
+          {'name': 'minor', 'type': 'uint256'},
+          {'name': 'patch', 'type': 'uint256'}
         ],
         'name': 'setMinimumClientVersion',
         'outputs': [],
@@ -2562,10 +1660,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'gasLimit',
-            'type': 'uint256'
-          }
+          {'name': 'gasLimit', 'type': 'uint256'}
         ],
         'name': 'setBlockGasLimit',
         'outputs': [],
@@ -2576,10 +1671,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'gas',
-            'type': 'uint256'
-          }
+          {'name': 'gas', 'type': 'uint256'}
         ],
         'name': 'setIntrinsicGasForAlternativeFeeCurrency',
         'outputs': [],
@@ -2592,18 +1684,9 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getMinimumClientVersion',
         'outputs': [
-          {
-            'name': 'major',
-            'type': 'uint256'
-          },
-          {
-            'name': 'minor',
-            'type': 'uint256'
-          },
-          {
-            'name': 'patch',
-            'type': 'uint256'
-          }
+          {'name': 'major', 'type': 'uint256'},
+          {'name': 'minor', 'type': 'uint256'},
+          {'name': 'patch', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2687,29 +1770,13 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'sender',
-            'type': 'address'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsKey',
-            'type': 'bytes'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsPop',
-            'type': 'bytes'
-          }
+          {'internalType': 'address', 'name': 'sender', 'type': 'address'},
+          {'internalType': 'bytes', 'name': 'blsKey', 'type': 'bytes'},
+          {'internalType': 'bytes', 'name': 'blsPop', 'type': 'bytes'}
         ],
         'name': 'checkProofOfPossession',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2718,49 +1785,25 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'aNumerator',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': 'aNumerator', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'aDenominator',
             'type': 'uint256'
           },
-          {
-            'internalType': 'uint256',
-            'name': 'bNumerator',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': 'bNumerator', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'bDenominator',
             'type': 'uint256'
           },
-          {
-            'internalType': 'uint256',
-            'name': 'exponent',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '_decimals',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'exponent', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '_decimals', 'type': 'uint256'}
         ],
         'name': 'fractionMulExp',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2769,19 +1812,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'header', 'type': 'bytes'}
         ],
         'name': 'getBlockNumberFromHeader',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2792,11 +1827,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getEpochNumber',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2805,19 +1836,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'getEpochNumberOfBlock',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2828,11 +1851,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getEpochSize',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2841,19 +1860,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'getParentSealBitmap',
         'outputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2862,19 +1873,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'header', 'type': 'bytes'}
         ],
         'name': 'getVerifiedSealBitmapFromHeader',
         'outputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2883,16 +1886,8 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'validator',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          },
+          {'internalType': 'address', 'name': 'validator', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'groupMembershipHistoryIndex',
@@ -2901,11 +1896,7 @@ const Map registryContracts = {
         ],
         'name': 'groupMembershipAtBlock',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2914,19 +1905,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'header', 'type': 'bytes'}
         ],
         'name': 'hashHeader',
         'outputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2937,11 +1920,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2952,11 +1931,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2965,19 +1940,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'minQuorumSize',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -2988,11 +1955,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'minQuorumSizeInCurrentSet',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3003,11 +1966,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'numberValidatorsInCurrentSet',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3016,19 +1975,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'numberValidatorsInSet',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3039,11 +1990,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3054,11 +2001,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'registry',
         'outputs': [
-          {
-            'internalType': 'contract IRegistry',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'contract IRegistry', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3091,16 +2034,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'penalty',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'reward',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'penalty', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'reward', 'type': 'uint256'}
         ],
         'name': 'setSlashingIncentives',
         'outputs': [],
@@ -3113,16 +2048,8 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'slashingIncentives',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'penalty',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'reward',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'penalty', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'reward', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3131,11 +2058,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -3146,19 +2069,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'validatorSignerAddressFromCurrentSet',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3167,24 +2082,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'validatorSignerAddressFromSet',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3198,16 +2101,8 @@ const Map registryContracts = {
             'name': 'registryAddress',
             'type': 'address'
           },
-          {
-            'internalType': 'uint256',
-            'name': '_penalty',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '_reward',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '_penalty', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '_reward', 'type': 'uint256'}
         ],
         'name': 'initialize',
         'outputs': [],
@@ -3218,34 +2113,14 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'signer',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'headerA',
-            'type': 'bytes'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'headerB',
-            'type': 'bytes'
-          }
+          {'internalType': 'address', 'name': 'signer', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'},
+          {'internalType': 'bytes', 'name': 'headerA', 'type': 'bytes'},
+          {'internalType': 'bytes', 'name': 'headerB', 'type': 'bytes'}
         ],
         'name': 'checkForDoubleSigning',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3254,26 +2129,10 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'signer',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'headerA',
-            'type': 'bytes'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'headerB',
-            'type': 'bytes'
-          },
+          {'internalType': 'address', 'name': 'signer', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'},
+          {'internalType': 'bytes', 'name': 'headerA', 'type': 'bytes'},
+          {'internalType': 'bytes', 'name': 'headerB', 'type': 'bytes'},
           {
             'internalType': 'uint256',
             'name': 'groupMembershipHistoryIndex',
@@ -3326,14 +2185,8 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'slashingIncentives',
         'outputs': [
-          {
-            'name': 'penalty',
-            'type': 'uint256'
-          },
-          {
-            'name': 'reward',
-            'type': 'uint256'
-          }
+          {'name': 'penalty', 'type': 'uint256'},
+          {'name': 'reward', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3342,17 +2195,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'name': 'index', 'type': 'uint256'}
         ],
         'name': 'validatorSignerAddressFromCurrentSet',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3363,10 +2210,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3375,25 +2219,13 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'sender',
-            'type': 'address'
-          },
-          {
-            'name': 'blsKey',
-            'type': 'bytes'
-          },
-          {
-            'name': 'blsPop',
-            'type': 'bytes'
-          }
+          {'name': 'sender', 'type': 'address'},
+          {'name': 'blsKey', 'type': 'bytes'},
+          {'name': 'blsPop', 'type': 'bytes'}
         ],
         'name': 'checkProofOfPossession',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3402,17 +2234,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'getEpochNumberOfBlock',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3423,10 +2249,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'slashableDowntime',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3435,17 +2258,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'name': 'header', 'type': 'bytes'}
         ],
         'name': 'getVerifiedSealBitmapFromHeader',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3454,21 +2271,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'index',
-            'type': 'uint256'
-          },
-          {
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'name': 'index', 'type': 'uint256'},
+          {'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'validatorSignerAddressFromSet',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3477,17 +2285,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'name': 'header', 'type': 'bytes'}
         ],
         'name': 'hashHeader',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3507,10 +2309,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'minQuorumSizeInCurrentSet',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3521,10 +2320,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'registry',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3535,10 +2331,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'numberValidatorsInCurrentSet',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3547,25 +2340,13 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'validator',
-            'type': 'address'
-          },
-          {
-            'name': 'blockNumber',
-            'type': 'uint256'
-          },
-          {
-            'name': 'groupMembershipHistoryIndex',
-            'type': 'uint256'
-          }
+          {'name': 'validator', 'type': 'address'},
+          {'name': 'blockNumber', 'type': 'uint256'},
+          {'name': 'groupMembershipHistoryIndex', 'type': 'uint256'}
         ],
         'name': 'groupMembershipAtBlock',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3574,17 +2355,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'name': 'header', 'type': 'bytes'}
         ],
         'name': 'getBlockNumberFromHeader',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3595,10 +2370,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'name': '',
-            'type': 'address'
-          }
+          {'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3609,10 +2381,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3623,10 +2392,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getEpochNumber',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3635,17 +2401,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'numberValidatorsInSet',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3654,10 +2414,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'registryAddress',
-            'type': 'address'
-          }
+          {'name': 'registryAddress', 'type': 'address'}
         ],
         'name': 'setRegistry',
         'outputs': [],
@@ -3668,14 +2425,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'penalty',
-            'type': 'uint256'
-          },
-          {
-            'name': 'reward',
-            'type': 'uint256'
-          }
+          {'name': 'penalty', 'type': 'uint256'},
+          {'name': 'reward', 'type': 'uint256'}
         ],
         'name': 'setSlashingIncentives',
         'outputs': [],
@@ -3688,10 +2439,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getEpochSize',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3700,17 +2448,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'minQuorumSize',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3719,41 +2461,17 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'aNumerator',
-            'type': 'uint256'
-          },
-          {
-            'name': 'aDenominator',
-            'type': 'uint256'
-          },
-          {
-            'name': 'bNumerator',
-            'type': 'uint256'
-          },
-          {
-            'name': 'bDenominator',
-            'type': 'uint256'
-          },
-          {
-            'name': 'exponent',
-            'type': 'uint256'
-          },
-          {
-            'name': '_decimals',
-            'type': 'uint256'
-          }
+          {'name': 'aNumerator', 'type': 'uint256'},
+          {'name': 'aDenominator', 'type': 'uint256'},
+          {'name': 'bNumerator', 'type': 'uint256'},
+          {'name': 'bDenominator', 'type': 'uint256'},
+          {'name': 'exponent', 'type': 'uint256'},
+          {'name': '_decimals', 'type': 'uint256'}
         ],
         'name': 'fractionMulExp',
         'outputs': [
-          {
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'name': '',
-            'type': 'uint256'
-          }
+          {'name': '', 'type': 'uint256'},
+          {'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3762,10 +2480,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -3776,17 +2491,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'getParentSealBitmap',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3795,11 +2504,7 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': false,
-            'name': 'interval',
-            'type': 'uint256'
-          }
+          {'indexed': false, 'name': 'interval', 'type': 'uint256'}
         ],
         'name': 'SlashableDowntimeSet',
         'type': 'event'
@@ -3807,16 +2512,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'validator',
-            'type': 'address'
-          },
-          {
-            'indexed': true,
-            'name': 'startBlock',
-            'type': 'uint256'
-          }
+          {'indexed': true, 'name': 'validator', 'type': 'address'},
+          {'indexed': true, 'name': 'startBlock', 'type': 'uint256'}
         ],
         'name': 'DowntimeSlashPerformed',
         'type': 'event'
@@ -3824,16 +2521,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': false,
-            'name': 'penalty',
-            'type': 'uint256'
-          },
-          {
-            'indexed': false,
-            'name': 'reward',
-            'type': 'uint256'
-          }
+          {'indexed': false, 'name': 'penalty', 'type': 'uint256'},
+          {'indexed': false, 'name': 'reward', 'type': 'uint256'}
         ],
         'name': 'SlashingIncentivesSet',
         'type': 'event'
@@ -3841,11 +2530,7 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'registryAddress',
-            'type': 'address'
-          }
+          {'indexed': true, 'name': 'registryAddress', 'type': 'address'}
         ],
         'name': 'RegistrySet',
         'type': 'event'
@@ -3853,16 +2538,8 @@ const Map registryContracts = {
       {
         'anonymous': false,
         'inputs': [
-          {
-            'indexed': true,
-            'name': 'previousOwner',
-            'type': 'address'
-          },
-          {
-            'indexed': true,
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'indexed': true, 'name': 'previousOwner', 'type': 'address'},
+          {'indexed': true, 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'OwnershipTransferred',
         'type': 'event'
@@ -3870,22 +2547,10 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'registryAddress',
-            'type': 'address'
-          },
-          {
-            'name': '_penalty',
-            'type': 'uint256'
-          },
-          {
-            'name': '_reward',
-            'type': 'uint256'
-          },
-          {
-            'name': '_slashableDowntime',
-            'type': 'uint256'
-          }
+          {'name': 'registryAddress', 'type': 'address'},
+          {'name': '_penalty', 'type': 'uint256'},
+          {'name': '_reward', 'type': 'uint256'},
+          {'name': '_slashableDowntime', 'type': 'uint256'}
         ],
         'name': 'initialize',
         'outputs': [],
@@ -3896,10 +2561,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'interval',
-            'type': 'uint256'
-          }
+          {'name': 'interval', 'type': 'uint256'}
         ],
         'name': 'setSlashableDowntime',
         'outputs': [],
@@ -3910,25 +2572,13 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'name': 'startBlock',
-            'type': 'uint256'
-          },
-          {
-            'name': 'startSignerIndex',
-            'type': 'uint256'
-          },
-          {
-            'name': 'endSignerIndex',
-            'type': 'uint256'
-          }
+          {'name': 'startBlock', 'type': 'uint256'},
+          {'name': 'startSignerIndex', 'type': 'uint256'},
+          {'name': 'endSignerIndex', 'type': 'uint256'}
         ],
         'name': 'isDown',
         'outputs': [
-          {
-            'name': '',
-            'type': 'bool'
-          }
+          {'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -3937,46 +2587,16 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'name': 'startBlock',
-            'type': 'uint256'
-          },
-          {
-            'name': 'startSignerIndex',
-            'type': 'uint256'
-          },
-          {
-            'name': 'endSignerIndex',
-            'type': 'uint256'
-          },
-          {
-            'name': 'groupMembershipHistoryIndex',
-            'type': 'uint256'
-          },
-          {
-            'name': 'validatorElectionLessers',
-            'type': 'address[]'
-          },
-          {
-            'name': 'validatorElectionGreaters',
-            'type': 'address[]'
-          },
-          {
-            'name': 'validatorElectionIndices',
-            'type': 'uint256[]'
-          },
-          {
-            'name': 'groupElectionLessers',
-            'type': 'address[]'
-          },
-          {
-            'name': 'groupElectionGreaters',
-            'type': 'address[]'
-          },
-          {
-            'name': 'groupElectionIndices',
-            'type': 'uint256[]'
-          }
+          {'name': 'startBlock', 'type': 'uint256'},
+          {'name': 'startSignerIndex', 'type': 'uint256'},
+          {'name': 'endSignerIndex', 'type': 'uint256'},
+          {'name': 'groupMembershipHistoryIndex', 'type': 'uint256'},
+          {'name': 'validatorElectionLessers', 'type': 'address[]'},
+          {'name': 'validatorElectionGreaters', 'type': 'address[]'},
+          {'name': 'validatorElectionIndices', 'type': 'uint256[]'},
+          {'name': 'groupElectionLessers', 'type': 'address[]'},
+          {'name': 'groupElectionGreaters', 'type': 'address[]'},
+          {'name': 'groupElectionIndices', 'type': 'uint256[]'}
         ],
         'name': 'slash',
         'outputs': [],
@@ -4226,29 +2846,13 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'sender',
-            'type': 'address'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsKey',
-            'type': 'bytes'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsPop',
-            'type': 'bytes'
-          }
+          {'internalType': 'address', 'name': 'sender', 'type': 'address'},
+          {'internalType': 'bytes', 'name': 'blsKey', 'type': 'bytes'},
+          {'internalType': 'bytes', 'name': 'blsPop', 'type': 'bytes'}
         ],
         'name': 'checkProofOfPossession',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4259,11 +2863,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'electabilityThreshold',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4274,16 +2874,8 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'electableValidators',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'min',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'max',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'min', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'max', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4292,49 +2884,25 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'aNumerator',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': 'aNumerator', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'aDenominator',
             'type': 'uint256'
           },
-          {
-            'internalType': 'uint256',
-            'name': 'bNumerator',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': 'bNumerator', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'bDenominator',
             'type': 'uint256'
           },
-          {
-            'internalType': 'uint256',
-            'name': 'exponent',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '_decimals',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'exponent', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '_decimals', 'type': 'uint256'}
         ],
         'name': 'fractionMulExp',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4343,19 +2911,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'header', 'type': 'bytes'}
         ],
         'name': 'getBlockNumberFromHeader',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4366,11 +2926,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getEpochNumber',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4379,19 +2935,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'getEpochNumberOfBlock',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4402,11 +2950,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getEpochSize',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4415,19 +2959,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'getParentSealBitmap',
         'outputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4436,19 +2972,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'header', 'type': 'bytes'}
         ],
         'name': 'getVerifiedSealBitmapFromHeader',
         'outputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4457,19 +2985,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'header', 'type': 'bytes'}
         ],
         'name': 'hashHeader',
         'outputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4480,11 +3000,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4495,11 +3011,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4510,11 +3022,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'maxNumGroupsVotedFor',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4523,19 +3031,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'minQuorumSize',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4546,11 +3046,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'minQuorumSizeInCurrentSet',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4561,11 +3057,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'numberValidatorsInCurrentSet',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4574,19 +3066,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'numberValidatorsInSet',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4597,11 +3081,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4612,11 +3092,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'registry',
         'outputs': [
-          {
-            'internalType': 'contract IRegistry',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'contract IRegistry', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4649,11 +3125,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -4664,19 +3136,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'validatorSignerAddressFromCurrentSet',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4685,24 +3149,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'validatorSignerAddressFromSet',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4713,26 +3165,10 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getVersionNumber',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'pure',
@@ -4776,24 +3212,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'min',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'max',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'min', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'max', 'type': 'uint256'}
         ],
         'name': 'setElectableValidators',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -4804,16 +3228,8 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getElectableValidators',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4830,11 +3246,7 @@ const Map registryContracts = {
         ],
         'name': 'setMaxNumGroupsVotedFor',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -4843,19 +3255,11 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'threshold',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'threshold', 'type': 'uint256'}
         ],
         'name': 'setElectabilityThreshold',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -4866,11 +3270,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getElectabilityThreshold',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4879,34 +3279,14 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'address',
-            'name': 'lesser',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'greater',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
+          {'internalType': 'address', 'name': 'lesser', 'type': 'address'},
+          {'internalType': 'address', 'name': 'greater', 'type': 'address'}
         ],
         'name': 'vote',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -4915,19 +3295,11 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'}
         ],
         'name': 'activate',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -4936,24 +3308,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'},
+          {'internalType': 'address', 'name': 'group', 'type': 'address'}
         ],
         'name': 'hasActivatablePendingVotes',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -4962,39 +3322,15 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'address',
-            'name': 'lesser',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'greater',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
+          {'internalType': 'address', 'name': 'lesser', 'type': 'address'},
+          {'internalType': 'address', 'name': 'greater', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'revokePending',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -5003,34 +3339,14 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'lesser',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'greater',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'},
+          {'internalType': 'address', 'name': 'lesser', 'type': 'address'},
+          {'internalType': 'address', 'name': 'greater', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'revokeAllActive',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -5039,39 +3355,15 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'address',
-            'name': 'lesser',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'greater',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
+          {'internalType': 'address', 'name': 'lesser', 'type': 'address'},
+          {'internalType': 'address', 'name': 'greater', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'revokeActive',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -5080,19 +3372,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getTotalVotesByAccount',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5101,24 +3385,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'},
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getPendingVotesForGroupByAccount',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5127,24 +3399,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'},
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getActiveVotesForGroupByAccount',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5153,24 +3413,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'},
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getTotalVotesForGroupByAccount',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5179,24 +3427,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'},
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getActiveVoteUnitsForGroupByAccount',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5205,19 +3441,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'}
         ],
         'name': 'getActiveVoteUnitsForGroup',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5226,19 +3454,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'}
         ],
         'name': 'getTotalVotesForGroup',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5247,19 +3467,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'}
         ],
         'name': 'getActiveVotesForGroup',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5268,19 +3480,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'}
         ],
         'name': 'getPendingVotesForGroup',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5289,19 +3493,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'}
         ],
         'name': 'getGroupEligibility',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5310,29 +3506,17 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          },
+          {'internalType': 'address', 'name': 'group', 'type': 'address'},
           {
             'internalType': 'uint256',
             'name': 'totalEpochRewards',
             'type': 'uint256'
           },
-          {
-            'internalType': 'uint256[]',
-            'name': 'uptimes',
-            'type': 'uint256[]'
-          }
+          {'internalType': 'uint256[]', 'name': 'uptimes', 'type': 'uint256[]'}
         ],
         'name': 'getGroupEpochRewards',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5341,26 +3525,10 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'address',
-            'name': 'lesser',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'greater',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
+          {'internalType': 'address', 'name': 'lesser', 'type': 'address'},
+          {'internalType': 'address', 'name': 'greater', 'type': 'address'}
         ],
         'name': 'distributeEpochRewards',
         'outputs': [],
@@ -5371,11 +3539,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'}
         ],
         'name': 'markGroupIneligible',
         'outputs': [],
@@ -5386,21 +3550,9 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'lesser',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'greater',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'},
+          {'internalType': 'address', 'name': 'lesser', 'type': 'address'},
+          {'internalType': 'address', 'name': 'greater', 'type': 'address'}
         ],
         'name': 'markGroupEligible',
         'outputs': [],
@@ -5411,19 +3563,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getGroupsVotedForByAccount',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          }
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5432,24 +3576,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'canReceiveVotes',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5458,19 +3590,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'}
         ],
         'name': 'getNumVotesReceivable',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5481,11 +3605,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getTotalVotes',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5496,11 +3616,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getActiveVotes',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5511,11 +3627,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getEligibleValidatorGroups',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          }
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5526,16 +3638,8 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getTotalVotesForEligibleValidatorGroups',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': 'groups',
-            'type': 'address[]'
-          },
-          {
-            'internalType': 'uint256[]',
-            'name': 'values',
-            'type': 'uint256[]'
-          }
+          {'internalType': 'address[]', 'name': 'groups', 'type': 'address[]'},
+          {'internalType': 'uint256[]', 'name': 'values', 'type': 'uint256[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5546,11 +3650,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'electValidatorSigners',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          }
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5572,11 +3672,7 @@ const Map registryContracts = {
         ],
         'name': 'electNValidatorSigners',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          }
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5587,11 +3683,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getCurrentValidatorSigners',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          }
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5600,39 +3692,19 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'address[]',
-            'name': 'lessers',
-            'type': 'address[]'
-          },
+          {'internalType': 'address', 'name': 'account', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
+          {'internalType': 'address[]', 'name': 'lessers', 'type': 'address[]'},
           {
             'internalType': 'address[]',
             'name': 'greaters',
             'type': 'address[]'
           },
-          {
-            'internalType': 'uint256[]',
-            'name': 'indices',
-            'type': 'uint256[]'
-          }
+          {'internalType': 'uint256[]', 'name': 'indices', 'type': 'uint256[]'}
         ],
         'name': 'forceDecrementVotes',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -5795,11 +3867,7 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'name': 'escrowedPayments',
         'outputs': [
@@ -5808,36 +3876,16 @@ const Map registryContracts = {
             'name': 'recipientIdentifier',
             'type': 'bytes32'
           },
-          {
-            'internalType': 'address',
-            'name': 'sender',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'token',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'sentIndex',
-            'type': 'uint256'
-          },
+          {'internalType': 'address', 'name': 'sender', 'type': 'address'},
+          {'internalType': 'address', 'name': 'token', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'sentIndex', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'receivedIndex',
             'type': 'uint256'
           },
-          {
-            'internalType': 'uint256',
-            'name': 'timestamp',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': 'timestamp', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'expirySeconds',
@@ -5858,11 +3906,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5873,11 +3917,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5888,11 +3928,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5901,24 +3937,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'name': 'receivedPaymentIds',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5929,11 +3953,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'registry',
         'outputs': [
-          {
-            'internalType': 'contract IRegistry',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'contract IRegistry', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5951,24 +3971,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'name': 'sentPaymentIds',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -5992,11 +4000,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -6009,26 +4013,10 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getVersionNumber',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'pure',
@@ -6052,31 +4040,15 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'bytes32',
-            'name': 'identifier',
-            'type': 'bytes32'
-          },
-          {
-            'internalType': 'address',
-            'name': 'token',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
+          {'internalType': 'bytes32', 'name': 'identifier', 'type': 'bytes32'},
+          {'internalType': 'address', 'name': 'token', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'expirySeconds',
             'type': 'uint256'
           },
-          {
-            'internalType': 'address',
-            'name': 'paymentId',
-            'type': 'address'
-          },
+          {'internalType': 'address', 'name': 'paymentId', 'type': 'address'},
           {
             'internalType': 'uint256',
             'name': 'minAttestations',
@@ -6085,11 +4057,7 @@ const Map registryContracts = {
         ],
         'name': 'transfer',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -6098,34 +4066,14 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'paymentId',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint8',
-            'name': 'v',
-            'type': 'uint8'
-          },
-          {
-            'internalType': 'bytes32',
-            'name': 'r',
-            'type': 'bytes32'
-          },
-          {
-            'internalType': 'bytes32',
-            'name': 's',
-            'type': 'bytes32'
-          }
+          {'internalType': 'address', 'name': 'paymentId', 'type': 'address'},
+          {'internalType': 'uint8', 'name': 'v', 'type': 'uint8'},
+          {'internalType': 'bytes32', 'name': 'r', 'type': 'bytes32'},
+          {'internalType': 'bytes32', 'name': 's', 'type': 'bytes32'}
         ],
         'name': 'withdraw',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -6134,19 +4082,11 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'paymentId',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'paymentId', 'type': 'address'}
         ],
         'name': 'revoke',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -6155,19 +4095,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes32',
-            'name': 'identifier',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': 'identifier', 'type': 'bytes32'}
         ],
         'name': 'getReceivedPaymentIds',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          }
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6176,19 +4108,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'sender',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'sender', 'type': 'address'}
         ],
         'name': 'getSentPaymentIds',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          }
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6351,11 +4275,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'goldBucket',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6366,11 +4286,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6381,11 +4297,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6396,11 +4308,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'lastBucketUpdate',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6411,11 +4319,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'minimumReports',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6426,11 +4330,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6441,11 +4341,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'registry',
         'outputs': [
-          {
-            'internalType': 'contract IRegistry',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'contract IRegistry', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6465,11 +4361,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'reserveFraction',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6495,11 +4387,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'spread',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6510,11 +4398,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'stable',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6525,11 +4409,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'stableBucket',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6538,11 +4418,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -6555,11 +4431,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'updateFrequency',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6570,26 +4442,10 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getVersionNumber',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'pure',
@@ -6603,16 +4459,8 @@ const Map registryContracts = {
             'name': 'registryAddress',
             'type': 'address'
           },
-          {
-            'internalType': 'address',
-            'name': 'stableToken',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '_spread',
-            'type': 'uint256'
-          },
+          {'internalType': 'address', 'name': 'stableToken', 'type': 'address'},
+          {'internalType': 'uint256', 'name': '_spread', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': '_reserveFraction',
@@ -6638,29 +4486,17 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'sellAmount',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': 'sellAmount', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'minBuyAmount',
             'type': 'uint256'
           },
-          {
-            'internalType': 'bool',
-            'name': 'sellGold',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': 'sellGold', 'type': 'bool'}
         ],
         'name': 'sell',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -6669,29 +4505,17 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'sellAmount',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': 'sellAmount', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'minBuyAmount',
             'type': 'uint256'
           },
-          {
-            'internalType': 'bool',
-            'name': 'sellGold',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': 'sellGold', 'type': 'bool'}
         ],
         'name': 'exchange',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -6700,29 +4524,17 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'buyAmount',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': 'buyAmount', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'maxSellAmount',
             'type': 'uint256'
           },
-          {
-            'internalType': 'bool',
-            'name': 'buyGold',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': 'buyGold', 'type': 'bool'}
         ],
         'name': 'buy',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -6731,24 +4543,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'sellAmount',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'bool',
-            'name': 'sellGold',
-            'type': 'bool'
-          }
+          {'internalType': 'uint256', 'name': 'sellAmount', 'type': 'uint256'},
+          {'internalType': 'bool', 'name': 'sellGold', 'type': 'bool'}
         ],
         'name': 'getBuyTokenAmount',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6757,24 +4557,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'buyAmount',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'bool',
-            'name': 'sellGold',
-            'type': 'bool'
-          }
+          {'internalType': 'uint256', 'name': 'buyAmount', 'type': 'uint256'},
+          {'internalType': 'bool', 'name': 'sellGold', 'type': 'bool'}
         ],
         'name': 'getSellTokenAmount',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6783,24 +4571,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bool',
-            'name': 'sellGold',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': 'sellGold', 'type': 'bool'}
         ],
         'name': 'getBuyAndSellBuckets',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6854,11 +4630,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'newSpread',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'newSpread', 'type': 'uint256'}
         ],
         'name': 'setSpread',
         'outputs': [],
@@ -6910,11 +4682,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6923,19 +4691,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'name': 'isFrozen',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6946,11 +4706,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6961,11 +4717,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -6983,11 +4735,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -7007,11 +4755,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'target',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'target', 'type': 'address'}
         ],
         'name': 'freeze',
         'outputs': [],
@@ -7022,11 +4766,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'target',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'target', 'type': 'address'}
         ],
         'name': 'unfreeze',
         'outputs': [],
@@ -7128,11 +4868,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'adjustmentSpeed',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7143,11 +4879,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'gasPriceMinimum',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7158,11 +4890,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'gasPriceMinimumFloor',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7173,11 +4901,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7188,11 +4912,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7203,11 +4923,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7218,11 +4934,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'registry',
         'outputs': [
-          {
-            'internalType': 'contract IRegistry',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'contract IRegistry', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7257,11 +4969,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'targetDensity',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7270,11 +4978,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -7287,26 +4991,10 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getVersionNumber',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'pure',
@@ -7390,19 +5078,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'tokenAddress',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'tokenAddress', 'type': 'address'}
         ],
         'name': 'getGasPriceMinimum',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7424,11 +5104,7 @@ const Map registryContracts = {
         ],
         'name': 'updateGasPriceMinimum',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -7450,11 +5126,7 @@ const Map registryContracts = {
         ],
         'name': 'getUpdatedGasPriceMinimum',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7565,11 +5237,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7580,11 +5248,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7595,11 +5259,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7610,11 +5270,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'registry',
         'outputs': [
-          {
-            'internalType': 'contract IRegistry',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'contract IRegistry', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7647,11 +5303,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -7677,24 +5329,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'to',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'to', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'transfer',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -7703,29 +5343,13 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'to',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'string',
-            'name': 'comment',
-            'type': 'string'
-          }
+          {'internalType': 'address', 'name': 'to', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
+          {'internalType': 'string', 'name': 'comment', 'type': 'string'}
         ],
         'name': 'transferWithComment',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -7734,24 +5358,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'spender',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'spender', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'approve',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -7760,24 +5372,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'spender',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'spender', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'increaseAllowance',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -7786,24 +5386,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'spender',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'spender', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'decreaseAllowance',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -7812,29 +5400,13 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'from',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'to',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'from', 'type': 'address'},
+          {'internalType': 'address', 'name': 'to', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'transferFrom',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -7843,24 +5415,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'to',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'to', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'mint',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -7871,11 +5431,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'name',
         'outputs': [
-          {
-            'internalType': 'string',
-            'name': '',
-            'type': 'string'
-          }
+          {'internalType': 'string', 'name': '', 'type': 'string'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7886,11 +5442,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'symbol',
         'outputs': [
-          {
-            'internalType': 'string',
-            'name': '',
-            'type': 'string'
-          }
+          {'internalType': 'string', 'name': '', 'type': 'string'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7901,11 +5453,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'decimals',
         'outputs': [
-          {
-            'internalType': 'uint8',
-            'name': '',
-            'type': 'uint8'
-          }
+          {'internalType': 'uint8', 'name': '', 'type': 'uint8'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7916,11 +5464,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'totalSupply',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7929,24 +5473,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'owner',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'spender',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'owner', 'type': 'address'},
+          {'internalType': 'address', 'name': 'spender', 'type': 'address'}
         ],
         'name': 'allowance',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -7955,11 +5487,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'amount',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'amount', 'type': 'uint256'}
         ],
         'name': 'increaseSupply',
         'outputs': [],
@@ -7970,19 +5498,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'owner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'owner', 'type': 'address'}
         ],
         'name': 'balanceOf',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8446,21 +5966,13 @@ const Map registryContracts = {
         'name': 'RegistrySet',
         'type': 'event'
       },
-      {
-        'payable': true,
-        'stateMutability': 'payable',
-        'type': 'fallback'
-      },
+      {'payable': true, 'stateMutability': 'payable', 'type': 'fallback'},
       {
         'constant': true,
         'inputs': [],
         'name': 'approver',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8469,29 +5981,13 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'sender',
-            'type': 'address'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsKey',
-            'type': 'bytes'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsPop',
-            'type': 'bytes'
-          }
+          {'internalType': 'address', 'name': 'sender', 'type': 'address'},
+          {'internalType': 'bytes', 'name': 'blsKey', 'type': 'bytes'},
+          {'internalType': 'bytes', 'name': 'blsPop', 'type': 'bytes'}
         ],
         'name': 'checkProofOfPossession',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8502,11 +5998,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'concurrentProposals',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8517,11 +6009,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'dequeueFrequency',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8530,19 +6018,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'name': 'dequeued',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8551,19 +6031,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'name': 'emptyIndices',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8572,49 +6044,25 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'aNumerator',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': 'aNumerator', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'aDenominator',
             'type': 'uint256'
           },
-          {
-            'internalType': 'uint256',
-            'name': 'bNumerator',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': 'bNumerator', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'bDenominator',
             'type': 'uint256'
           },
-          {
-            'internalType': 'uint256',
-            'name': 'exponent',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '_decimals',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'exponent', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '_decimals', 'type': 'uint256'}
         ],
         'name': 'fractionMulExp',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8623,19 +6071,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'header', 'type': 'bytes'}
         ],
         'name': 'getBlockNumberFromHeader',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8646,11 +6086,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getEpochNumber',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8659,19 +6095,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'getEpochNumberOfBlock',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8682,11 +6110,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getEpochSize',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8695,19 +6119,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'getParentSealBitmap',
         'outputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8716,19 +6132,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'header', 'type': 'bytes'}
         ],
         'name': 'getVerifiedSealBitmapFromHeader',
         'outputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8737,19 +6145,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'header', 'type': 'bytes'}
         ],
         'name': 'hashHeader',
         'outputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8758,24 +6158,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'name': 'hotfixes',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': 'executed',
-            'type': 'bool'
-          },
-          {
-            'internalType': 'bool',
-            'name': 'approved',
-            'type': 'bool'
-          },
+          {'internalType': 'bool', 'name': 'executed', 'type': 'bool'},
+          {'internalType': 'bool', 'name': 'approved', 'type': 'bool'},
           {
             'internalType': 'uint256',
             'name': 'preparedEpoch',
@@ -8791,11 +6179,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8806,11 +6190,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8821,11 +6201,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'lastDequeue',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8836,11 +6212,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'minDeposit',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8849,19 +6221,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'minQuorumSize',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8872,11 +6236,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'minQuorumSizeInCurrentSet',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8887,11 +6247,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'numberValidatorsInCurrentSet',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8900,19 +6256,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'numberValidatorsInSet',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8923,11 +6271,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8938,11 +6282,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'proposalCount',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8953,11 +6293,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'queueExpiry',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8966,19 +6302,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'name': 'refundedDeposits',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -8989,11 +6317,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'registry',
         'outputs': [
-          {
-            'internalType': 'contract IRegistry',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'contract IRegistry', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -9028,21 +6352,9 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'stageDurations',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'approval',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'referendum',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'execution',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'approval', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'referendum', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'execution', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -9051,11 +6363,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -9066,19 +6374,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'validatorSignerAddressFromCurrentSet',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -9087,24 +6387,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'validatorSignerAddressFromSet',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -9115,26 +6403,10 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getVersionNumber',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'pure',
@@ -9148,21 +6420,13 @@ const Map registryContracts = {
             'name': 'registryAddress',
             'type': 'address'
           },
-          {
-            'internalType': 'address',
-            'name': '_approver',
-            'type': 'address'
-          },
+          {'internalType': 'address', 'name': '_approver', 'type': 'address'},
           {
             'internalType': 'uint256',
             'name': '_concurrentProposals',
             'type': 'uint256'
           },
-          {
-            'internalType': 'uint256',
-            'name': '_minDeposit',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': '_minDeposit', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': '_queueExpiry',
@@ -9218,11 +6482,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': '_approver',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '_approver', 'type': 'address'}
         ],
         'name': 'setApprover',
         'outputs': [],
@@ -9248,11 +6508,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': '_minDeposit',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '_minDeposit', 'type': 'uint256'}
         ],
         'name': 'setMinDeposit',
         'outputs': [],
@@ -9263,11 +6519,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': '_queueExpiry',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '_queueExpiry', 'type': 'uint256'}
         ],
         'name': 'setQueueExpiry',
         'outputs': [],
@@ -9398,21 +6650,9 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'destination',
-            'type': 'address'
-          },
-          {
-            'internalType': 'bytes4',
-            'name': 'functionId',
-            'type': 'bytes4'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'threshold',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'destination', 'type': 'address'},
+          {'internalType': 'bytes4', 'name': 'functionId', 'type': 'bytes4'},
+          {'internalType': 'uint256', 'name': 'threshold', 'type': 'uint256'}
         ],
         'name': 'setConstitution',
         'outputs': [],
@@ -9423,39 +6663,23 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256[]',
-            'name': 'values',
-            'type': 'uint256[]'
-          },
+          {'internalType': 'uint256[]', 'name': 'values', 'type': 'uint256[]'},
           {
             'internalType': 'address[]',
             'name': 'destinations',
             'type': 'address[]'
           },
-          {
-            'internalType': 'bytes',
-            'name': 'data',
-            'type': 'bytes'
-          },
+          {'internalType': 'bytes', 'name': 'data', 'type': 'bytes'},
           {
             'internalType': 'uint256[]',
             'name': 'dataLengths',
             'type': 'uint256[]'
           },
-          {
-            'internalType': 'string',
-            'name': 'descriptionUrl',
-            'type': 'string'
-          }
+          {'internalType': 'string', 'name': 'descriptionUrl', 'type': 'string'}
         ],
         'name': 'propose',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': true,
         'stateMutability': 'payable',
@@ -9464,29 +6688,13 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'proposalId',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'lesser',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'greater',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'proposalId', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'lesser', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'greater', 'type': 'uint256'}
         ],
         'name': 'upvote',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -9495,19 +6703,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'proposalId',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'proposalId', 'type': 'uint256'}
         ],
         'name': 'getProposalStage',
         'outputs': [
-          {
-            'internalType': 'enum Proposals.Stage',
-            'name': '',
-            'type': 'uint8'
-          }
+          {'internalType': 'enum Proposals.Stage', 'name': '', 'type': 'uint8'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -9516,24 +6716,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'lesser',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'greater',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'lesser', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'greater', 'type': 'uint256'}
         ],
         'name': 'revokeUpvote',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -9542,24 +6730,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'proposalId',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'proposalId', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'approve',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -9568,16 +6744,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'proposalId',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': 'proposalId', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'},
           {
             'internalType': 'enum Proposals.VoteValue',
             'name': 'value',
@@ -9586,11 +6754,7 @@ const Map registryContracts = {
         ],
         'name': 'vote',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -9599,24 +6763,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'proposalId',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'proposalId', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'execute',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -9625,11 +6777,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'bytes32',
-            'name': 'hash',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': 'hash', 'type': 'bytes32'}
         ],
         'name': 'approveHotfix',
         'outputs': [],
@@ -9640,24 +6788,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes32',
-            'name': 'hash',
-            'type': 'bytes32'
-          },
-          {
-            'internalType': 'address',
-            'name': 'whitelister',
-            'type': 'address'
-          }
+          {'internalType': 'bytes32', 'name': 'hash', 'type': 'bytes32'},
+          {'internalType': 'address', 'name': 'whitelister', 'type': 'address'}
         ],
         'name': 'isHotfixWhitelistedBy',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -9666,11 +6802,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'bytes32',
-            'name': 'hash',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': 'hash', 'type': 'bytes32'}
         ],
         'name': 'whitelistHotfix',
         'outputs': [],
@@ -9681,11 +6813,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'bytes32',
-            'name': 'hash',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': 'hash', 'type': 'bytes32'}
         ],
         'name': 'prepareHotfix',
         'outputs': [],
@@ -9696,31 +6824,19 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256[]',
-            'name': 'values',
-            'type': 'uint256[]'
-          },
+          {'internalType': 'uint256[]', 'name': 'values', 'type': 'uint256[]'},
           {
             'internalType': 'address[]',
             'name': 'destinations',
             'type': 'address[]'
           },
-          {
-            'internalType': 'bytes',
-            'name': 'data',
-            'type': 'bytes'
-          },
+          {'internalType': 'bytes', 'name': 'data', 'type': 'bytes'},
           {
             'internalType': 'uint256[]',
             'name': 'dataLengths',
             'type': 'uint256[]'
           },
-          {
-            'internalType': 'bytes32',
-            'name': 'salt',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': 'salt', 'type': 'bytes32'}
         ],
         'name': 'executeHotfix',
         'outputs': [],
@@ -9733,11 +6849,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'withdraw',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -9746,19 +6858,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'isVoting',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -9769,11 +6873,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getApprovalStageDuration',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -9784,11 +6884,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getReferendumStageDuration',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -9799,11 +6895,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getExecutionStageDuration',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -9814,26 +6906,10 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getParticipationParameters',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -9842,19 +6918,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'proposalId',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'proposalId', 'type': 'uint256'}
         ],
         'name': 'proposalExists',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -9863,39 +6931,15 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'proposalId',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'proposalId', 'type': 'uint256'}
         ],
         'name': 'getProposal',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'string',
-            'name': '',
-            'type': 'string'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'string', 'name': '', 'type': 'string'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -9904,34 +6948,14 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'proposalId',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'proposalId', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'getProposalTransaction',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          },
-          {
-            'internalType': 'bytes',
-            'name': '',
-            'type': 'bytes'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'address', 'name': '', 'type': 'address'},
+          {'internalType': 'bytes', 'name': '', 'type': 'bytes'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -9940,19 +6964,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'proposalId',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'proposalId', 'type': 'uint256'}
         ],
         'name': 'isApproved',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -9961,29 +6977,13 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'proposalId',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'proposalId', 'type': 'uint256'}
         ],
         'name': 'getVoteTotals',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -9992,34 +6992,14 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'getVoteRecord',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10030,11 +7010,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getQueueLength',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10043,19 +7019,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'proposalId',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'proposalId', 'type': 'uint256'}
         ],
         'name': 'getUpvotes',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10066,16 +7034,8 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getQueue',
         'outputs': [
-          {
-            'internalType': 'uint256[]',
-            'name': '',
-            'type': 'uint256[]'
-          },
-          {
-            'internalType': 'uint256[]',
-            'name': '',
-            'type': 'uint256[]'
-          }
+          {'internalType': 'uint256[]', 'name': '', 'type': 'uint256[]'},
+          {'internalType': 'uint256[]', 'name': '', 'type': 'uint256[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10086,11 +7046,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getDequeue',
         'outputs': [
-          {
-            'internalType': 'uint256[]',
-            'name': '',
-            'type': 'uint256[]'
-          }
+          {'internalType': 'uint256[]', 'name': '', 'type': 'uint256[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10099,24 +7055,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getUpvoteRecord',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10125,19 +7069,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getMostRecentReferendumProposal',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10146,19 +7082,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes32',
-            'name': 'hash',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': 'hash', 'type': 'bytes32'}
         ],
         'name': 'hotfixWhitelistValidatorTally',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10167,19 +7095,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes32',
-            'name': 'hash',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': 'hash', 'type': 'bytes32'}
         ],
         'name': 'isHotfixPassing',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10188,29 +7108,13 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes32',
-            'name': 'hash',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': 'hash', 'type': 'bytes32'}
         ],
         'name': 'getHotfixRecord',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          },
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'},
+          {'internalType': 'bool', 'name': '', 'type': 'bool'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10228,19 +7132,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'proposalId',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'proposalId', 'type': 'uint256'}
         ],
         'name': 'isQueued',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10249,19 +7145,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'proposalId',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'proposalId', 'type': 'uint256'}
         ],
         'name': 'isProposalPassing',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10270,24 +7158,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'proposalId',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'proposalId', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'isDequeuedProposal',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10296,19 +7172,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'proposalId',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'proposalId', 'type': 'uint256'}
         ],
         'name': 'isDequeuedProposalExpired',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10317,19 +7185,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'proposalId',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'proposalId', 'type': 'uint256'}
         ],
         'name': 'isQueuedProposalExpired',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10338,24 +7198,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'destination',
-            'type': 'address'
-          },
-          {
-            'internalType': 'bytes4',
-            'name': 'functionId',
-            'type': 'bytes4'
-          }
+          {'internalType': 'address', 'name': 'destination', 'type': 'address'},
+          {'internalType': 'bytes4', 'name': 'functionId', 'type': 'bytes4'}
         ],
         'name': 'getConstitution',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10555,11 +7403,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10570,11 +7414,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10585,11 +7425,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10600,11 +7436,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'registry',
         'outputs': [
-          {
-            'internalType': 'contract IRegistry',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'contract IRegistry', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10637,19 +7469,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'name': 'slashingWhitelist',
         'outputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10660,11 +7484,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'totalNonvoting',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10673,11 +7493,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -10690,11 +7506,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'unlockingPeriod',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10703,19 +7515,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'slasher',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'slasher', 'type': 'address'}
         ],
         'name': 'isSlasher',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10726,26 +7530,10 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getVersionNumber',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'pure',
@@ -10774,11 +7562,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'setUnlockingPeriod',
         'outputs': [],
@@ -10798,16 +7582,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'incrementNonvotingAccountBalance',
         'outputs': [],
@@ -10818,16 +7594,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'decrementNonvotingAccountBalance',
         'outputs': [],
@@ -10838,11 +7606,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'unlock',
         'outputs': [],
@@ -10853,16 +7617,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'relock',
         'outputs': [],
@@ -10873,11 +7629,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'withdraw',
         'outputs': [],
@@ -10890,11 +7642,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getTotalLockedGold',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10905,11 +7653,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getNonvotingLockedGold',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10918,19 +7662,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getAccountTotalLockedGold',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10939,19 +7675,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getAccountNonvotingLockedGold',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10960,24 +7688,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getPendingWithdrawals',
         'outputs': [
-          {
-            'internalType': 'uint256[]',
-            'name': '',
-            'type': 'uint256[]'
-          },
-          {
-            'internalType': 'uint256[]',
-            'name': '',
-            'type': 'uint256[]'
-          }
+          {'internalType': 'uint256[]', 'name': '', 'type': 'uint256[]'},
+          {'internalType': 'uint256[]', 'name': '', 'type': 'uint256[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -10986,19 +7702,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getTotalPendingWithdrawals',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11009,11 +7717,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getSlashingWhitelist',
         'outputs': [
-          {
-            'internalType': 'bytes32[]',
-            'name': '',
-            'type': 'bytes32[]'
-          }
+          {'internalType': 'bytes32[]', 'name': '', 'type': 'bytes32[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11042,11 +7746,7 @@ const Map registryContracts = {
             'name': 'slasherIdentifier',
             'type': 'string'
           },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'removeSlasher',
         'outputs': [],
@@ -11057,41 +7757,17 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'penalty',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'address',
-            'name': 'reporter',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'reward',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'address[]',
-            'name': 'lessers',
-            'type': 'address[]'
-          },
+          {'internalType': 'address', 'name': 'account', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'penalty', 'type': 'uint256'},
+          {'internalType': 'address', 'name': 'reporter', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'reward', 'type': 'uint256'},
+          {'internalType': 'address[]', 'name': 'lessers', 'type': 'address[]'},
           {
             'internalType': 'address[]',
             'name': 'greaters',
             'type': 'address[]'
           },
-          {
-            'internalType': 'uint256[]',
-            'name': 'indices',
-            'type': 'uint256[]'
-          }
+          {'internalType': 'uint256[]', 'name': 'indices', 'type': 'uint256[]'}
         ],
         'name': 'slash',
         'outputs': [],
@@ -11245,21 +7921,13 @@ const Map registryContracts = {
         'name': 'Submission',
         'type': 'event'
       },
-      {
-        'payable': true,
-        'stateMutability': 'payable',
-        'type': 'fallback'
-      },
+      {'payable': true, 'stateMutability': 'payable', 'type': 'fallback'},
       {
         'constant': true,
         'inputs': [],
         'name': 'MAX_OWNER_COUNT',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11268,24 +7936,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'name': 'confirmations',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11296,11 +7952,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11311,11 +7963,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'internalRequired',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11324,19 +7972,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'name': 'isOwner',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11345,19 +7985,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'name': 'owners',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11368,11 +8000,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'required',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11383,11 +8011,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'transactionCount',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11396,34 +8020,14 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'name': 'transactions',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': 'destination',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'data',
-            'type': 'bytes'
-          },
-          {
-            'internalType': 'bool',
-            'name': 'executed',
-            'type': 'bool'
-          }
+          {'internalType': 'address', 'name': 'destination', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
+          {'internalType': 'bytes', 'name': 'data', 'type': 'bytes'},
+          {'internalType': 'bool', 'name': 'executed', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11432,16 +8036,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address[]',
-            'name': '_owners',
-            'type': 'address[]'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '_required',
-            'type': 'uint256'
-          },
+          {'internalType': 'address[]', 'name': '_owners', 'type': 'address[]'},
+          {'internalType': 'uint256', 'name': '_required', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': '_internalRequired',
@@ -11457,11 +8053,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'owner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'owner', 'type': 'address'}
         ],
         'name': 'addOwner',
         'outputs': [],
@@ -11472,11 +8064,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'owner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'owner', 'type': 'address'}
         ],
         'name': 'removeOwner',
         'outputs': [],
@@ -11487,16 +8075,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'owner',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'owner', 'type': 'address'},
+          {'internalType': 'address', 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'replaceOwner',
         'outputs': [],
@@ -11507,11 +8087,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': '_required',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '_required', 'type': 'uint256'}
         ],
         'name': 'changeRequirement',
         'outputs': [],
@@ -11537,21 +8113,9 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'destination',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'data',
-            'type': 'bytes'
-          }
+          {'internalType': 'address', 'name': 'destination', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
+          {'internalType': 'bytes', 'name': 'data', 'type': 'bytes'}
         ],
         'name': 'submitTransaction',
         'outputs': [
@@ -11621,11 +8185,7 @@ const Map registryContracts = {
         ],
         'name': 'isConfirmed',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11642,11 +8202,7 @@ const Map registryContracts = {
         ],
         'name': 'getConfirmationCount',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'count',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'count', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11655,24 +8211,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bool',
-            'name': 'pending',
-            'type': 'bool'
-          },
-          {
-            'internalType': 'bool',
-            'name': 'executed',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': 'pending', 'type': 'bool'},
+          {'internalType': 'bool', 'name': 'executed', 'type': 'bool'}
         ],
         'name': 'getTransactionCount',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'count',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'count', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11683,11 +8227,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getOwners',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          }
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11717,26 +8257,10 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'from',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'to',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'bool',
-            'name': 'pending',
-            'type': 'bool'
-          },
-          {
-            'internalType': 'bool',
-            'name': 'executed',
-            'type': 'bool'
-          }
+          {'internalType': 'uint256', 'name': 'from', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'to', 'type': 'uint256'},
+          {'internalType': 'bool', 'name': 'pending', 'type': 'bool'},
+          {'internalType': 'bool', 'name': 'executed', 'type': 'bool'}
         ],
         'name': 'getTransactionIds',
         'outputs': [
@@ -11902,21 +8426,13 @@ const Map registryContracts = {
         'name': 'ReleaseScheduleRevoked',
         'type': 'event'
       },
-      {
-        'payable': true,
-        'stateMutability': 'payable',
-        'type': 'fallback'
-      },
+      {'payable': true, 'stateMutability': 'payable', 'type': 'fallback'},
       {
         'constant': true,
         'inputs': [],
         'name': 'EXPIRATION_TIME',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11927,11 +8443,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'beneficiary',
         'outputs': [
-          {
-            'internalType': 'address payable',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address payable', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11942,11 +8454,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'canValidate',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11957,11 +8465,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'canVote',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11972,11 +8476,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -11987,11 +8487,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -12002,11 +8498,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'liquidityProvisionMet',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -12017,11 +8509,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'maxDistribution',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -12032,11 +8520,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -12047,11 +8531,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'refundAddress',
         'outputs': [
-          {
-            'internalType': 'address payable',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address payable', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -12062,11 +8542,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'registry',
         'outputs': [
-          {
-            'internalType': 'contract IRegistry',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'contract IRegistry', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -12077,11 +8553,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'releaseOwner',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -12136,26 +8608,14 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'revocationInfo',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': 'revocable',
-            'type': 'bool'
-          },
-          {
-            'internalType': 'bool',
-            'name': 'canExpire',
-            'type': 'bool'
-          },
+          {'internalType': 'bool', 'name': 'revocable', 'type': 'bool'},
+          {'internalType': 'bool', 'name': 'canExpire', 'type': 'bool'},
           {
             'internalType': 'uint256',
             'name': 'releasedBalanceAtRevoke',
             'type': 'uint256'
           },
-          {
-            'internalType': 'uint256',
-            'name': 'revokeTime',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'revokeTime', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -12181,11 +8641,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'totalWithdrawn',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -12194,11 +8650,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -12209,16 +8661,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'to',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'to', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'transfer',
         'outputs': [],
@@ -12254,11 +8698,7 @@ const Map registryContracts = {
             'name': 'amountReleasedPerPeriod',
             'type': 'uint256'
           },
-          {
-            'internalType': 'bool',
-            'name': 'revocable',
-            'type': 'bool'
-          },
+          {'internalType': 'bool', 'name': 'revocable', 'type': 'bool'},
           {
             'internalType': 'address payable',
             'name': '_beneficiary',
@@ -12284,16 +8724,8 @@ const Map registryContracts = {
             'name': 'initialDistributionRatio',
             'type': 'uint256'
           },
-          {
-            'internalType': 'bool',
-            'name': '_canValidate',
-            'type': 'bool'
-          },
-          {
-            'internalType': 'bool',
-            'name': '_canVote',
-            'type': 'bool'
-          },
+          {'internalType': 'bool', 'name': '_canValidate', 'type': 'bool'},
+          {'internalType': 'bool', 'name': '_canVote', 'type': 'bool'},
           {
             'internalType': 'address',
             'name': 'registryAddress',
@@ -12311,11 +8743,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isRevoked',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -12333,11 +8761,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'bool',
-            'name': '_canExpire',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '_canExpire', 'type': 'bool'}
         ],
         'name': 'setCanExpire',
         'outputs': [],
@@ -12378,11 +8802,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'amount',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'amount', 'type': 'uint256'}
         ],
         'name': 'withdraw',
         'outputs': [],
@@ -12422,11 +8842,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getTotalBalance',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -12437,11 +8853,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getRemainingTotalBalance',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -12452,11 +8864,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getRemainingUnlockedBalance',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -12467,11 +8875,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getRemainingLockedBalance',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -12482,11 +8886,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getCurrentReleasedTotalAmount',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -12495,11 +8895,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'lockGold',
         'outputs': [],
@@ -12510,11 +8906,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'unlockGold',
         'outputs': [],
@@ -12525,16 +8917,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'relockGold',
         'outputs': [],
@@ -12545,11 +8929,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'withdrawLockedGold',
         'outputs': [],
@@ -12565,21 +8945,9 @@ const Map registryContracts = {
             'name': 'signer',
             'type': 'address'
           },
-          {
-            'internalType': 'uint8',
-            'name': 'v',
-            'type': 'uint8'
-          },
-          {
-            'internalType': 'bytes32',
-            'name': 'r',
-            'type': 'bytes32'
-          },
-          {
-            'internalType': 'bytes32',
-            'name': 's',
-            'type': 'bytes32'
-          }
+          {'internalType': 'uint8', 'name': 'v', 'type': 'uint8'},
+          {'internalType': 'bytes32', 'name': 'r', 'type': 'bytes32'},
+          {'internalType': 'bytes32', 'name': 's', 'type': 'bytes32'}
         ],
         'name': 'authorizeVoteSigner',
         'outputs': [],
@@ -12595,21 +8963,9 @@ const Map registryContracts = {
             'name': 'signer',
             'type': 'address'
           },
-          {
-            'internalType': 'uint8',
-            'name': 'v',
-            'type': 'uint8'
-          },
-          {
-            'internalType': 'bytes32',
-            'name': 'r',
-            'type': 'bytes32'
-          },
-          {
-            'internalType': 'bytes32',
-            'name': 's',
-            'type': 'bytes32'
-          }
+          {'internalType': 'uint8', 'name': 'v', 'type': 'uint8'},
+          {'internalType': 'bytes32', 'name': 'r', 'type': 'bytes32'},
+          {'internalType': 'bytes32', 'name': 's', 'type': 'bytes32'}
         ],
         'name': 'authorizeValidatorSigner',
         'outputs': [],
@@ -12625,26 +8981,10 @@ const Map registryContracts = {
             'name': 'signer',
             'type': 'address'
           },
-          {
-            'internalType': 'uint8',
-            'name': 'v',
-            'type': 'uint8'
-          },
-          {
-            'internalType': 'bytes32',
-            'name': 'r',
-            'type': 'bytes32'
-          },
-          {
-            'internalType': 'bytes32',
-            'name': 's',
-            'type': 'bytes32'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'ecdsaPublicKey',
-            'type': 'bytes'
-          }
+          {'internalType': 'uint8', 'name': 'v', 'type': 'uint8'},
+          {'internalType': 'bytes32', 'name': 'r', 'type': 'bytes32'},
+          {'internalType': 'bytes32', 'name': 's', 'type': 'bytes32'},
+          {'internalType': 'bytes', 'name': 'ecdsaPublicKey', 'type': 'bytes'}
         ],
         'name': 'authorizeValidatorSignerWithPublicKey',
         'outputs': [],
@@ -12660,36 +9000,12 @@ const Map registryContracts = {
             'name': 'signer',
             'type': 'address'
           },
-          {
-            'internalType': 'uint8',
-            'name': 'v',
-            'type': 'uint8'
-          },
-          {
-            'internalType': 'bytes32',
-            'name': 'r',
-            'type': 'bytes32'
-          },
-          {
-            'internalType': 'bytes32',
-            'name': 's',
-            'type': 'bytes32'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'ecdsaPublicKey',
-            'type': 'bytes'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsPublicKey',
-            'type': 'bytes'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsPop',
-            'type': 'bytes'
-          }
+          {'internalType': 'uint8', 'name': 'v', 'type': 'uint8'},
+          {'internalType': 'bytes32', 'name': 'r', 'type': 'bytes32'},
+          {'internalType': 'bytes32', 'name': 's', 'type': 'bytes32'},
+          {'internalType': 'bytes', 'name': 'ecdsaPublicKey', 'type': 'bytes'},
+          {'internalType': 'bytes', 'name': 'blsPublicKey', 'type': 'bytes'},
+          {'internalType': 'bytes', 'name': 'blsPop', 'type': 'bytes'}
         ],
         'name': 'authorizeValidatorSignerWithKeys',
         'outputs': [],
@@ -12705,21 +9021,9 @@ const Map registryContracts = {
             'name': 'signer',
             'type': 'address'
           },
-          {
-            'internalType': 'uint8',
-            'name': 'v',
-            'type': 'uint8'
-          },
-          {
-            'internalType': 'bytes32',
-            'name': 'r',
-            'type': 'bytes32'
-          },
-          {
-            'internalType': 'bytes32',
-            'name': 's',
-            'type': 'bytes32'
-          }
+          {'internalType': 'uint8', 'name': 'v', 'type': 'uint8'},
+          {'internalType': 'bytes32', 'name': 'r', 'type': 'bytes32'},
+          {'internalType': 'bytes32', 'name': 's', 'type': 'bytes32'}
         ],
         'name': 'authorizeAttestationSigner',
         'outputs': [],
@@ -12730,11 +9034,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'string',
-            'name': 'name',
-            'type': 'string'
-          },
+          {'internalType': 'string', 'name': 'name', 'type': 'string'},
           {
             'internalType': 'bytes',
             'name': 'dataEncryptionKey',
@@ -12745,21 +9045,9 @@ const Map registryContracts = {
             'name': 'walletAddress',
             'type': 'address'
           },
-          {
-            'internalType': 'uint8',
-            'name': 'v',
-            'type': 'uint8'
-          },
-          {
-            'internalType': 'bytes32',
-            'name': 'r',
-            'type': 'bytes32'
-          },
-          {
-            'internalType': 'bytes32',
-            'name': 's',
-            'type': 'bytes32'
-          }
+          {'internalType': 'uint8', 'name': 'v', 'type': 'uint8'},
+          {'internalType': 'bytes32', 'name': 'r', 'type': 'bytes32'},
+          {'internalType': 'bytes32', 'name': 's', 'type': 'bytes32'}
         ],
         'name': 'setAccount',
         'outputs': [],
@@ -12779,11 +9067,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'string',
-            'name': 'name',
-            'type': 'string'
-          }
+          {'internalType': 'string', 'name': 'name', 'type': 'string'}
         ],
         'name': 'setAccountName',
         'outputs': [],
@@ -12799,21 +9083,9 @@ const Map registryContracts = {
             'name': 'walletAddress',
             'type': 'address'
           },
-          {
-            'internalType': 'uint8',
-            'name': 'v',
-            'type': 'uint8'
-          },
-          {
-            'internalType': 'bytes32',
-            'name': 'r',
-            'type': 'bytes32'
-          },
-          {
-            'internalType': 'bytes32',
-            'name': 's',
-            'type': 'bytes32'
-          }
+          {'internalType': 'uint8', 'name': 'v', 'type': 'uint8'},
+          {'internalType': 'bytes32', 'name': 'r', 'type': 'bytes32'},
+          {'internalType': 'bytes32', 'name': 's', 'type': 'bytes32'}
         ],
         'name': 'setAccountWalletAddress',
         'outputs': [],
@@ -12839,11 +9111,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'string',
-            'name': 'metadataURL',
-            'type': 'string'
-          }
+          {'internalType': 'string', 'name': 'metadataURL', 'type': 'string'}
         ],
         'name': 'setAccountMetadataURL',
         'outputs': [],
@@ -12854,31 +9122,11 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'address',
-            'name': 'lesser',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'greater',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
+          {'internalType': 'address', 'name': 'lesser', 'type': 'address'},
+          {'internalType': 'address', 'name': 'greater', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'revokeActive',
         'outputs': [],
@@ -12889,31 +9137,11 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'address',
-            'name': 'lesser',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'greater',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
+          {'internalType': 'address', 'name': 'lesser', 'type': 'address'},
+          {'internalType': 'address', 'name': 'greater', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'revokePending',
         'outputs': [],
@@ -13144,27 +9372,15 @@ const Map registryContracts = {
         'name': 'TokenRemoved',
         'type': 'event'
       },
-      {
-        'payable': true,
-        'stateMutability': 'payable',
-        'type': 'fallback'
-      },
+      {'payable': true, 'stateMutability': 'payable', 'type': 'fallback'},
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'name': 'assetAllocationSymbols',
         'outputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13173,19 +9389,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'name': 'assetAllocationWeights',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13196,11 +9404,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'frozenReserveGoldDays',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13211,11 +9415,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'frozenReserveGoldStartBalance',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13226,11 +9426,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'frozenReserveGoldStartDay',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13241,11 +9437,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13254,19 +9446,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'name': 'isOtherReserveAddress',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13277,11 +9461,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13290,19 +9470,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'name': 'isSpender',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13311,19 +9483,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'name': 'isToken',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13334,11 +9498,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'lastSpendingDay',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13347,19 +9507,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'name': 'otherReserveAddresses',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13370,11 +9522,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13385,11 +9533,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'registry',
         'outputs': [
-          {
-            'internalType': 'contract IRegistry',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'contract IRegistry', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13424,11 +9568,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'spendingLimit',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13439,11 +9579,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'tobinTax',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13454,16 +9590,8 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'tobinTaxCache',
         'outputs': [
-          {
-            'internalType': 'uint128',
-            'name': 'numerator',
-            'type': 'uint128'
-          },
-          {
-            'internalType': 'uint128',
-            'name': 'timestamp',
-            'type': 'uint128'
-          }
+          {'internalType': 'uint128', 'name': 'numerator', 'type': 'uint128'},
+          {'internalType': 'uint128', 'name': 'timestamp', 'type': 'uint128'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13474,11 +9602,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'tobinTaxReserveRatio',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13489,11 +9613,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'tobinTaxStalenessThreshold',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13502,11 +9622,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -13519,26 +9635,10 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getVersionNumber',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'pure',
@@ -13562,16 +9662,8 @@ const Map registryContracts = {
             'name': '_spendingRatio',
             'type': 'uint256'
           },
-          {
-            'internalType': 'uint256',
-            'name': '_frozenGold',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '_frozenDays',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': '_frozenGold', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '_frozenDays', 'type': 'uint256'},
           {
             'internalType': 'bytes32[]',
             'name': '_assetAllocationSymbols',
@@ -13582,11 +9674,7 @@ const Map registryContracts = {
             'name': '_assetAllocationWeights',
             'type': 'uint256[]'
           },
-          {
-            'internalType': 'uint256',
-            'name': '_tobinTax',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': '_tobinTax', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': '_tobinTaxReserveRatio',
@@ -13602,11 +9690,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'setTobinTaxStalenessThreshold',
         'outputs': [],
@@ -13617,11 +9701,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'setTobinTax',
         'outputs': [],
@@ -13632,11 +9712,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'setTobinTaxReserveRatio',
         'outputs': [],
@@ -13647,11 +9723,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'ratio',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'ratio', 'type': 'uint256'}
         ],
         'name': 'setDailySpendingRatio',
         'outputs': [],
@@ -13664,11 +9736,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getDailySpendingRatio',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13677,16 +9745,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'frozenGold',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'frozenDays',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'frozenGold', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'frozenDays', 'type': 'uint256'}
         ],
         'name': 'setFrozenGold',
         'outputs': [],
@@ -13697,16 +9757,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'bytes32[]',
-            'name': 'symbols',
-            'type': 'bytes32[]'
-          },
-          {
-            'internalType': 'uint256[]',
-            'name': 'weights',
-            'type': 'uint256[]'
-          }
+          {'internalType': 'bytes32[]', 'name': 'symbols', 'type': 'bytes32[]'},
+          {'internalType': 'uint256[]', 'name': 'weights', 'type': 'uint256[]'}
         ],
         'name': 'setAssetAllocations',
         'outputs': [],
@@ -13717,19 +9769,11 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'token',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'token', 'type': 'address'}
         ],
         'name': 'addToken',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -13738,24 +9782,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'token',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'token', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'removeToken',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -13772,11 +9804,7 @@ const Map registryContracts = {
         ],
         'name': 'addOtherReserveAddress',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -13790,19 +9818,11 @@ const Map registryContracts = {
             'name': 'reserveAddress',
             'type': 'address'
           },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'removeOtherReserveAddress',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -13811,11 +9831,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'spender',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'spender', 'type': 'address'}
         ],
         'name': 'addSpender',
         'outputs': [],
@@ -13826,11 +9842,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'spender',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'spender', 'type': 'address'}
         ],
         'name': 'removeSpender',
         'outputs': [],
@@ -13841,24 +9853,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address payable',
-            'name': 'to',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address payable', 'name': 'to', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'transferGold',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -13867,24 +9867,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address payable',
-            'name': 'to',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address payable', 'name': 'to', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'transferExchangeGold',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -13895,16 +9883,8 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getOrComputeTobinTax',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -13915,11 +9895,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getTokens',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          }
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13930,11 +9906,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getOtherReserveAddresses',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          }
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13945,11 +9917,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getAssetAllocationSymbols',
         'outputs': [
-          {
-            'internalType': 'bytes32[]',
-            'name': '',
-            'type': 'bytes32[]'
-          }
+          {'internalType': 'bytes32[]', 'name': '', 'type': 'bytes32[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13960,11 +9928,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getAssetAllocationWeights',
         'outputs': [
-          {
-            'internalType': 'uint256[]',
-            'name': '',
-            'type': 'uint256[]'
-          }
+          {'internalType': 'uint256[]', 'name': '', 'type': 'uint256[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13975,11 +9939,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getUnfrozenBalance',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -13990,11 +9950,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getReserveGoldBalance',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14005,11 +9961,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getOtherReserveAddressesGoldBalance',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14020,11 +9972,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getUnfrozenReserveGoldBalance',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14035,11 +9983,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getFrozenReserveGoldBalance',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14050,11 +9994,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getReserveRatio',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14209,11 +10149,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14222,24 +10158,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'},
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'name': 'isOracle',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14250,11 +10174,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14263,24 +10183,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'name': 'oracles',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14291,11 +10199,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14315,11 +10219,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'reportExpirySeconds',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14328,11 +10228,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -14345,26 +10241,10 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getVersionNumber',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'pure',
@@ -14403,11 +10283,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'token',
-            'type': 'address'
-          },
+          {'internalType': 'address', 'name': 'token', 'type': 'address'},
           {
             'internalType': 'address',
             'name': 'oracleAddress',
@@ -14423,21 +10299,13 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'token',
-            'type': 'address'
-          },
+          {'internalType': 'address', 'name': 'token', 'type': 'address'},
           {
             'internalType': 'address',
             'name': 'oracleAddress',
             'type': 'address'
           },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'removeOracle',
         'outputs': [],
@@ -14448,16 +10316,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'token',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'n',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'token', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'n', 'type': 'uint256'}
         ],
         'name': 'removeExpiredReports',
         'outputs': [],
@@ -14468,24 +10328,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'token',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'token', 'type': 'address'}
         ],
         'name': 'isOldestReportExpired',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          },
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'},
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14494,26 +10342,10 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'token',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'address',
-            'name': 'lesserKey',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'greaterKey',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'token', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
+          {'internalType': 'address', 'name': 'lesserKey', 'type': 'address'},
+          {'internalType': 'address', 'name': 'greaterKey', 'type': 'address'}
         ],
         'name': 'report',
         'outputs': [],
@@ -14524,19 +10356,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'token',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'token', 'type': 'address'}
         ],
         'name': 'numRates',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14545,24 +10369,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'token',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'token', 'type': 'address'}
         ],
         'name': 'medianRate',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14571,24 +10383,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'token',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'token', 'type': 'address'}
         ],
         'name': 'getRates',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          },
-          {
-            'internalType': 'uint256[]',
-            'name': '',
-            'type': 'uint256[]'
-          },
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'},
+          {'internalType': 'uint256[]', 'name': '', 'type': 'uint256[]'},
           {
             'internalType': 'enum SortedLinkedListWithMedian.MedianRelation[]',
             'name': '',
@@ -14602,19 +10402,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'token',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'token', 'type': 'address'}
         ],
         'name': 'numTimestamps',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14623,19 +10415,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'token',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'token', 'type': 'address'}
         ],
         'name': 'medianTimestamp',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14644,24 +10428,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'token',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'token', 'type': 'address'}
         ],
         'name': 'getTimestamps',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          },
-          {
-            'internalType': 'uint256[]',
-            'name': '',
-            'type': 'uint256[]'
-          },
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'},
+          {'internalType': 'uint256[]', 'name': '', 'type': 'uint256[]'},
           {
             'internalType': 'enum SortedLinkedListWithMedian.MedianRelation[]',
             'name': '',
@@ -14675,19 +10447,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'token',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'token', 'type': 'address'}
         ],
         'name': 'getOracles',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          }
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14840,29 +10604,13 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'sender',
-            'type': 'address'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsKey',
-            'type': 'bytes'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsPop',
-            'type': 'bytes'
-          }
+          {'internalType': 'address', 'name': 'sender', 'type': 'address'},
+          {'internalType': 'bytes', 'name': 'blsKey', 'type': 'bytes'},
+          {'internalType': 'bytes', 'name': 'blsPop', 'type': 'bytes'}
         ],
         'name': 'checkProofOfPossession',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14871,49 +10619,25 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'aNumerator',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': 'aNumerator', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'aDenominator',
             'type': 'uint256'
           },
-          {
-            'internalType': 'uint256',
-            'name': 'bNumerator',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': 'bNumerator', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'bDenominator',
             'type': 'uint256'
           },
-          {
-            'internalType': 'uint256',
-            'name': 'exponent',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '_decimals',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'exponent', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '_decimals', 'type': 'uint256'}
         ],
         'name': 'fractionMulExp',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14922,19 +10646,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'header', 'type': 'bytes'}
         ],
         'name': 'getBlockNumberFromHeader',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14945,11 +10661,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getEpochNumber',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14958,19 +10670,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'getEpochNumberOfBlock',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14981,11 +10685,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getEpochSize',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -14994,19 +10694,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'getParentSealBitmap',
         'outputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15015,19 +10707,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'header', 'type': 'bytes'}
         ],
         'name': 'getVerifiedSealBitmapFromHeader',
         'outputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15036,19 +10720,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'header', 'type': 'bytes'}
         ],
         'name': 'hashHeader',
         'outputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15059,11 +10735,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15074,11 +10746,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15087,19 +10755,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'minQuorumSize',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15110,11 +10770,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'minQuorumSizeInCurrentSet',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15125,11 +10781,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'numberValidatorsInCurrentSet',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15138,19 +10790,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'numberValidatorsInSet',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15161,11 +10805,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15176,11 +10816,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'registry',
         'outputs': [
-          {
-            'internalType': 'contract IRegistry',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'contract IRegistry', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15213,11 +10849,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -15228,19 +10860,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'validatorSignerAddressFromCurrentSet',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15249,24 +10873,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'validatorSignerAddressFromSet',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15277,26 +10889,10 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getVersionNumber',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'pure',
@@ -15305,21 +10901,9 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'string',
-            'name': '_name',
-            'type': 'string'
-          },
-          {
-            'internalType': 'string',
-            'name': '_symbol',
-            'type': 'string'
-          },
-          {
-            'internalType': 'uint8',
-            'name': '_decimals',
-            'type': 'uint8'
-          },
+          {'internalType': 'string', 'name': '_name', 'type': 'string'},
+          {'internalType': 'string', 'name': '_symbol', 'type': 'string'},
+          {'internalType': 'uint8', 'name': '_decimals', 'type': 'uint8'},
           {
             'internalType': 'address',
             'name': 'registryAddress',
@@ -15355,16 +10939,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'rate',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'updatePeriod',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'rate', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'updatePeriod', 'type': 'uint256'}
         ],
         'name': 'setInflationParameters',
         'outputs': [],
@@ -15375,24 +10951,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'spender',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'spender', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'increaseAllowance',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -15401,24 +10965,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'spender',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'spender', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'decreaseAllowance',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -15427,24 +10979,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'spender',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'spender', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'approve',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -15453,24 +10993,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'to',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'to', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'mint',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -15479,29 +11007,13 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'to',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'string',
-            'name': 'comment',
-            'type': 'string'
-          }
+          {'internalType': 'address', 'name': 'to', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
+          {'internalType': 'string', 'name': 'comment', 'type': 'string'}
         ],
         'name': 'transferWithComment',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -15510,19 +11022,11 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'burn',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -15531,29 +11035,13 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'from',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'to',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'from', 'type': 'address'},
+          {'internalType': 'address', 'name': 'to', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'transferFrom',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -15564,11 +11052,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'name',
         'outputs': [
-          {
-            'internalType': 'string',
-            'name': '',
-            'type': 'string'
-          }
+          {'internalType': 'string', 'name': '', 'type': 'string'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15579,11 +11063,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'symbol',
         'outputs': [
-          {
-            'internalType': 'string',
-            'name': '',
-            'type': 'string'
-          }
+          {'internalType': 'string', 'name': '', 'type': 'string'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15594,11 +11074,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'decimals',
         'outputs': [
-          {
-            'internalType': 'uint8',
-            'name': '',
-            'type': 'uint8'
-          }
+          {'internalType': 'uint8', 'name': '', 'type': 'uint8'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15612,19 +11088,11 @@ const Map registryContracts = {
             'name': 'accountOwner',
             'type': 'address'
           },
-          {
-            'internalType': 'address',
-            'name': 'spender',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'spender', 'type': 'address'}
         ],
         'name': 'allowance',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15633,19 +11101,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'accountOwner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'accountOwner', 'type': 'address'}
         ],
         'name': 'balanceOf',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15656,11 +11116,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'totalSupply',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15671,26 +11127,10 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getInflationParameters',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15699,19 +11139,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'valueToUnits',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15720,19 +11152,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'units',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'units', 'type': 'uint256'}
         ],
         'name': 'unitsToValue',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -15741,24 +11165,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'to',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'to', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'transfer',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -15767,16 +11179,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'from',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'from', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'debitGasFees',
         'outputs': [],
@@ -15787,11 +11191,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'from',
-            'type': 'address'
-          },
+          {'internalType': 'address', 'name': 'from', 'type': 'address'},
           {
             'internalType': 'address',
             'name': 'feeRecipient',
@@ -15807,26 +11207,10 @@ const Map registryContracts = {
             'name': 'communityFund',
             'type': 'address'
           },
-          {
-            'internalType': 'uint256',
-            'name': 'refund',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'tipTxFee',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'gatewayFee',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'baseTxFee',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'refund', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'tipTxFee', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'gatewayFee', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'baseTxFee', 'type': 'uint256'}
         ],
         'name': 'creditGasFees',
         'outputs': [],
@@ -16261,29 +11645,13 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'sender',
-            'type': 'address'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsKey',
-            'type': 'bytes'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsPop',
-            'type': 'bytes'
-          }
+          {'internalType': 'address', 'name': 'sender', 'type': 'address'},
+          {'internalType': 'bytes', 'name': 'blsKey', 'type': 'bytes'},
+          {'internalType': 'bytes', 'name': 'blsPop', 'type': 'bytes'}
         ],
         'name': 'checkProofOfPossession',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16294,11 +11662,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'commissionUpdateDelay',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16307,49 +11671,25 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'aNumerator',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': 'aNumerator', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'aDenominator',
             'type': 'uint256'
           },
-          {
-            'internalType': 'uint256',
-            'name': 'bNumerator',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': 'bNumerator', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'bDenominator',
             'type': 'uint256'
           },
-          {
-            'internalType': 'uint256',
-            'name': 'exponent',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '_decimals',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'exponent', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '_decimals', 'type': 'uint256'}
         ],
         'name': 'fractionMulExp',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16358,19 +11698,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'header', 'type': 'bytes'}
         ],
         'name': 'getBlockNumberFromHeader',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16381,11 +11713,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getEpochNumber',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16394,19 +11722,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'getEpochNumberOfBlock',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16417,11 +11737,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getEpochSize',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16430,19 +11746,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'getParentSealBitmap',
         'outputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16451,19 +11759,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'header', 'type': 'bytes'}
         ],
         'name': 'getVerifiedSealBitmapFromHeader',
         'outputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16474,16 +11774,8 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'groupLockedGoldRequirements',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'duration',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'duration', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16492,19 +11784,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'header',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'header', 'type': 'bytes'}
         ],
         'name': 'hashHeader',
         'outputs': [
-          {
-            'internalType': 'bytes32',
-            'name': '',
-            'type': 'bytes32'
-          }
+          {'internalType': 'bytes32', 'name': '', 'type': 'bytes32'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16515,11 +11799,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'initialized',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16530,11 +11810,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'isOwner',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16545,11 +11821,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'maxGroupSize',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16560,11 +11832,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'membershipHistoryLength',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16573,19 +11841,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'minQuorumSize',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16596,11 +11856,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'minQuorumSizeInCurrentSet',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16611,11 +11867,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'numberValidatorsInCurrentSet',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16624,19 +11876,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'numberValidatorsInSet',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16647,11 +11891,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'owner',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16662,11 +11902,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'registry',
         'outputs': [
-          {
-            'internalType': 'contract IRegistry',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'contract IRegistry', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16701,11 +11937,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'slashingMultiplierResetPeriod',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16714,11 +11946,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'newOwner',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'newOwner', 'type': 'address'}
         ],
         'name': 'transferOwnership',
         'outputs': [],
@@ -16731,16 +11959,8 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'validatorLockedGoldRequirements',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'duration',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'duration', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16749,19 +11969,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'validatorSignerAddressFromCurrentSet',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16770,24 +11982,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'blockNumber',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'blockNumber', 'type': 'uint256'}
         ],
         'name': 'validatorSignerAddressFromSet',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16798,26 +11998,10 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getVersionNumber',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'pure',
@@ -16891,11 +12075,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'delay',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'delay', 'type': 'uint256'}
         ],
         'name': 'setCommissionUpdateDelay',
         'outputs': [],
@@ -16906,19 +12086,11 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'size',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'size', 'type': 'uint256'}
         ],
         'name': 'setMaxGroupSize',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -16927,19 +12099,11 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'length',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'length', 'type': 'uint256'}
         ],
         'name': 'setMembershipHistoryLength',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -16948,11 +12112,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'exponent',
-            'type': 'uint256'
-          },
+          {'internalType': 'uint256', 'name': 'exponent', 'type': 'uint256'},
           {
             'internalType': 'uint256',
             'name': 'adjustmentSpeed',
@@ -16961,11 +12121,7 @@ const Map registryContracts = {
         ],
         'name': 'setValidatorScoreParameters',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -16976,11 +12132,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getMaxGroupSize',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -16991,11 +12143,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getCommissionUpdateDelay',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17004,24 +12152,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'duration',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'duration', 'type': 'uint256'}
         ],
         'name': 'setGroupLockedGoldRequirements',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -17030,24 +12166,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'duration',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'duration', 'type': 'uint256'}
         ],
         'name': 'setValidatorLockedGoldRequirements',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -17056,29 +12180,13 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'ecdsaPublicKey',
-            'type': 'bytes'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsPublicKey',
-            'type': 'bytes'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsPop',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'ecdsaPublicKey', 'type': 'bytes'},
+          {'internalType': 'bytes', 'name': 'blsPublicKey', 'type': 'bytes'},
+          {'internalType': 'bytes', 'name': 'blsPop', 'type': 'bytes'}
         ],
         'name': 'registerValidator',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -17089,16 +12197,8 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getValidatorScoreParameters',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17107,34 +12207,14 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getMembershipHistory',
         'outputs': [
-          {
-            'internalType': 'uint256[]',
-            'name': '',
-            'type': 'uint256[]'
-          },
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256[]', 'name': '', 'type': 'uint256[]'},
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17143,19 +12223,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'uptime',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'uptime', 'type': 'uint256'}
         ],
         'name': 'calculateEpochScore',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17164,19 +12236,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'uint256[]',
-            'name': 'uptimes',
-            'type': 'uint256[]'
-          }
+          {'internalType': 'uint256[]', 'name': 'uptimes', 'type': 'uint256[]'}
         ],
         'name': 'calculateGroupEpochScore',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17185,16 +12249,8 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'signer',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'uptime',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'signer', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'uptime', 'type': 'uint256'}
         ],
         'name': 'updateValidatorScoreFromSigner',
         'outputs': [],
@@ -17205,24 +12261,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'signer',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'maxPayment',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'signer', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'maxPayment', 'type': 'uint256'}
         ],
         'name': 'distributeEpochPaymentsFromSigner',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -17231,19 +12275,11 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'deregisterValidator',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -17252,19 +12288,11 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'group',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'group', 'type': 'address'}
         ],
         'name': 'affiliate',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -17275,11 +12303,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'deaffiliate',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -17288,24 +12312,12 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'blsPublicKey',
-            'type': 'bytes'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsPop',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'blsPublicKey', 'type': 'bytes'},
+          {'internalType': 'bytes', 'name': 'blsPop', 'type': 'bytes'}
         ],
         'name': 'updateBlsPublicKey',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -17314,29 +12326,13 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'signer',
-            'type': 'address'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'ecdsaPublicKey',
-            'type': 'bytes'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'},
+          {'internalType': 'address', 'name': 'signer', 'type': 'address'},
+          {'internalType': 'bytes', 'name': 'ecdsaPublicKey', 'type': 'bytes'}
         ],
         'name': 'updateEcdsaPublicKey',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -17345,39 +12341,15 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'signer',
-            'type': 'address'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'ecdsaPublicKey',
-            'type': 'bytes'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsPublicKey',
-            'type': 'bytes'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsPop',
-            'type': 'bytes'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'},
+          {'internalType': 'address', 'name': 'signer', 'type': 'address'},
+          {'internalType': 'bytes', 'name': 'ecdsaPublicKey', 'type': 'bytes'},
+          {'internalType': 'bytes', 'name': 'blsPublicKey', 'type': 'bytes'},
+          {'internalType': 'bytes', 'name': 'blsPop', 'type': 'bytes'}
         ],
         'name': 'updatePublicKeys',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -17386,19 +12358,11 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'commission',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'commission', 'type': 'uint256'}
         ],
         'name': 'registerValidatorGroup',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -17407,19 +12371,11 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'deregisterValidatorGroup',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -17428,19 +12384,11 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'validator',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'validator', 'type': 'address'}
         ],
         'name': 'addMember',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -17449,29 +12397,13 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'validator',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'lesser',
-            'type': 'address'
-          },
-          {
-            'internalType': 'address',
-            'name': 'greater',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'validator', 'type': 'address'},
+          {'internalType': 'address', 'name': 'lesser', 'type': 'address'},
+          {'internalType': 'address', 'name': 'greater', 'type': 'address'}
         ],
         'name': 'addFirstMember',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -17480,19 +12412,11 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'validator',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'validator', 'type': 'address'}
         ],
         'name': 'removeMember',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -17501,11 +12425,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'validator',
-            'type': 'address'
-          },
+          {'internalType': 'address', 'name': 'validator', 'type': 'address'},
           {
             'internalType': 'address',
             'name': 'lesserMember',
@@ -17519,11 +12439,7 @@ const Map registryContracts = {
         ],
         'name': 'reorderMember',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'nonpayable',
@@ -17532,11 +12448,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'commission',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'commission', 'type': 'uint256'}
         ],
         'name': 'setNextCommissionUpdate',
         'outputs': [],
@@ -17556,19 +12468,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getAccountLockedGoldRequirement',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17577,19 +12481,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'meetsAccountLockedGoldRequirements',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17598,19 +12494,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'signer',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'signer', 'type': 'address'}
         ],
         'name': 'getValidatorBlsPublicKeyFromSigner',
         'outputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'blsPublicKey',
-            'type': 'bytes'
-          }
+          {'internalType': 'bytes', 'name': 'blsPublicKey', 'type': 'bytes'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17619,39 +12507,15 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getValidator',
         'outputs': [
-          {
-            'internalType': 'bytes',
-            'name': 'ecdsaPublicKey',
-            'type': 'bytes'
-          },
-          {
-            'internalType': 'bytes',
-            'name': 'blsPublicKey',
-            'type': 'bytes'
-          },
-          {
-            'internalType': 'address',
-            'name': 'affiliation',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'score',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'address',
-            'name': 'signer',
-            'type': 'address'
-          }
+          {'internalType': 'bytes', 'name': 'ecdsaPublicKey', 'type': 'bytes'},
+          {'internalType': 'bytes', 'name': 'blsPublicKey', 'type': 'bytes'},
+          {'internalType': 'address', 'name': 'affiliation', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'score', 'type': 'uint256'},
+          {'internalType': 'address', 'name': 'signer', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17660,49 +12524,17 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getValidatorGroup',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256[]',
-            'name': '',
-            'type': 'uint256[]'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256[]', 'name': '', 'type': 'uint256[]'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17711,19 +12543,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getGroupNumMembers',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17732,24 +12556,12 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'n',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'n', 'type': 'uint256'}
         ],
         'name': 'getTopGroupValidators',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          }
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17758,19 +12570,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address[]',
-            'name': 'accounts',
-            'type': 'address[]'
-          }
+          {'internalType': 'address[]', 'name': 'accounts', 'type': 'address[]'}
         ],
         'name': 'getGroupsNumMembers',
         'outputs': [
-          {
-            'internalType': 'uint256[]',
-            'name': '',
-            'type': 'uint256[]'
-          }
+          {'internalType': 'uint256[]', 'name': '', 'type': 'uint256[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17781,11 +12585,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getNumRegisteredValidators',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17796,16 +12596,8 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getValidatorLockedGoldRequirements',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17816,16 +12608,8 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getGroupLockedGoldRequirements',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17836,11 +12620,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getRegisteredValidators',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          }
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17851,11 +12631,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getRegisteredValidatorSigners',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          }
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17866,11 +12642,7 @@ const Map registryContracts = {
         'inputs': [],
         'name': 'getRegisteredValidatorGroups',
         'outputs': [
-          {
-            'internalType': 'address[]',
-            'name': '',
-            'type': 'address[]'
-          }
+          {'internalType': 'address[]', 'name': '', 'type': 'address[]'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17879,19 +12651,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'isValidatorGroup',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17900,19 +12664,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'isValidator',
         'outputs': [
-          {
-            'internalType': 'bool',
-            'name': '',
-            'type': 'bool'
-          }
+          {'internalType': 'bool', 'name': '', 'type': 'bool'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17921,19 +12677,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'signer',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'signer', 'type': 'address'}
         ],
         'name': 'getMembershipInLastEpochFromSigner',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17942,19 +12690,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getMembershipInLastEpoch',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -17978,11 +12718,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'uint256',
-            'name': 'value',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': 'value', 'type': 'uint256'}
         ],
         'name': 'setSlashingMultiplierResetPeriod',
         'outputs': [],
@@ -18002,11 +12738,7 @@ const Map registryContracts = {
       {
         'constant': false,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'halveSlashingMultiplier',
         'outputs': [],
@@ -18017,19 +12749,11 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'}
         ],
         'name': 'getValidatorGroupSlashingMultiplier',
         'outputs': [
-          {
-            'internalType': 'uint256',
-            'name': '',
-            'type': 'uint256'
-          }
+          {'internalType': 'uint256', 'name': '', 'type': 'uint256'}
         ],
         'payable': false,
         'stateMutability': 'view',
@@ -18038,29 +12762,13 @@ const Map registryContracts = {
       {
         'constant': true,
         'inputs': [
-          {
-            'internalType': 'address',
-            'name': 'account',
-            'type': 'address'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'epochNumber',
-            'type': 'uint256'
-          },
-          {
-            'internalType': 'uint256',
-            'name': 'index',
-            'type': 'uint256'
-          }
+          {'internalType': 'address', 'name': 'account', 'type': 'address'},
+          {'internalType': 'uint256', 'name': 'epochNumber', 'type': 'uint256'},
+          {'internalType': 'uint256', 'name': 'index', 'type': 'uint256'}
         ],
         'name': 'groupMembershipInEpoch',
         'outputs': [
-          {
-            'internalType': 'address',
-            'name': '',
-            'type': 'address'
-          }
+          {'internalType': 'address', 'name': '', 'type': 'address'}
         ],
         'payable': false,
         'stateMutability': 'view',

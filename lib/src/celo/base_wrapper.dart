@@ -31,7 +31,7 @@ class BaseWrapper {
         parameters: args,
         feeCurrency: _kit.feeCurrency,
         gasPrice: gasPrice,
-        maxGas: 10000000,
+        maxGas: 236771,
       ),
       chainId: null,
       fetchChainIdFromNetworkId: true,
